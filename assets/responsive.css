@@ -1,0 +1,254 @@
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    
+    .gallery {
+     padding: 0px; 
+}
+
+    .navbar-collapse {
+        position: fixed;
+        left: -100%;
+        /* Hidden by default */
+        /* background-color: white; */
+        background-color: white;
+        background-size: cover;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        border-right: 2px solid gray;
+        transition: left 0.3s ease;
+        /* Smooth transition */
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 1050;
+        /* Ensures it appears above other content */
+        padding-top: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        /* Space for content */
+    }
+
+    /* Show the sidebar when the navbar is expanded */
+    .navbar-collapse.show {
+        left: 0;
+    }
+
+
+    .navbar-collapse .navbar-nav {
+        margin-top: 30px;
+    }
+
+    /* Close button styles for improved accessibility */
+    .navbar-collapse .close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .navbar-nav .nav-item a {
+        color: black !important;
+        padding: 10px 30px !important;
+        font-size: 18px;
+
+    }
+
+    .single_counter_two_right {
+        padding: 5px;
+    }
+
+    .achievements {
+        font-size: 30px;
+    }
+
+
+
+
+    .counter_two {
+        padding: 0;
+    }
+
+    header .col-lg-6 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    header .register-btn {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .footer .text-center {
+        text-align: center;
+    }
+
+    .testimonials h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 0px 10px !important;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .top-header {
+        padding: 10px !important;
+    }
+
+    #mobile-none {
+        display: none !important;
+    }
+
+    .user-section i {
+        text-align: right;
+    }
+
+    .user-section {
+        text-align: right !important;
+    }
+
+    .white-hurry-card {
+        padding: 10px;
+        margin: 10px 0 0 0;
+
+    }
+
+    .accordion-flush .accordion-item .accordion-button {
+        font-size: 16px;
+    }
+
+    .testimonials h2 {
+        font-size: 20px;
+    }
+
+    .display-4 {
+        font-size: 60px;
+    }
+
+    .rating-div {
+        margin-top: 10px;
+        margin-left: 130px;
+    }
+
+    .four-nine {
+        margin-top: 10px;
+        font-weight: bold !important;
+    }
+
+    .laptop-view {
+        display: none !important;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    .contact-div {
+        width: 100%;
+        color: white;
+
+    }
+
+    .contact-section h1{
+        font-size: 35px;
+    }
+
+    .contact-section {
+        padding: 60px 0;
+        background-position: center;
+    }
+
+
+    .form-card{
+        padding: 20px;
+    }
+
+    .single_counter_two_right-index{
+        margin-bottom: 10px;
+    }
+
+    .map-section img {
+        width: 80%;
+    }
+
+    .text b {
+        font-size: 16px;
+    }
+
+    .text span {
+        display: none !important;
+    }
+
+    .mobile-diplay-flex{
+        display: flex !important;
+    }
+
+    .videos-section .row>* {
+        padding: 0;
+    }
+
+    .videos-section{
+        padding: 10px;
+    }
+
+    .videos-section video{
+        padding: 0 2px;
+    }
+ 
+    .team-member .row--1 img {
+        width: 60%;
+    }
+
+    .team-member .row--2 img{
+        width: 60%;
+    }
+
+    .selection-processes {
+        padding: 20px;
+    }
+
+    .pay--fee-form{
+        margin: 10px;
+    }
+
+
+   
+}
+
+@media (min-width:901px) {
+    .laptop-view {
+        display: block;
+    }
+
+    .mobile-view {
+        display: none !important;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 900px) and (min-width: 600px) {
+     .registraion-form-section img{
+        margin-top:120px;
+    }
+
+}
+
+
+@media (max-width:599px){
+       .registraion-form-section img{
+        margin-top:40px;
+    }
+
+}
+
+
+
+
+
