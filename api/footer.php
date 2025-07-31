@@ -140,7 +140,7 @@ We shape the future of cricket's great name!
 <!-- Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
 
-<!-- custom script -->
+<!-- custom script --> 
 <script src="../assets/script.js"></script>
 
 </body>
