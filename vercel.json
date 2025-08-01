@@ -37,6 +37,6 @@
     { "src": "/trials.php", "dest": "/trials.php" },
     { "src": "/videos.php", "dest": "/videos.php" },
 
-    { "src": "/(.*)", "dest": "/index.php" }
+    { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
