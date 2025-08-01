@@ -7,9 +7,9 @@
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
 
-    { "src": "/about.php", "dest": "/about.php" },
+    { "src": "/about.php", "dest": "/api/about.php" },
     { "src": "/contact-submit.php", "dest": "/contact-submit.php" },
-    { "src": "/contact.php", "dest": "/contact.php" },
+    { "src": "/api/contact.php", "dest": "/contact.php" },
     { "src": "/default.php", "dest": "/default.php" },
     { "src": "/demo.php", "dest": "/demo.php" },
     { "src": "/footer.php", "dest": "/footer.php" },
