@@ -85,7 +85,7 @@
     <div class="gallery">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center py-4">
+                <div class="col-md-12 text-center text-black py-4">
                     <h1>Gallery</h1>
                     <div class="dots text-center">
                         <div class="dot1"> </div>
@@ -130,7 +130,7 @@
             </div>
             
             <div class="row">
-               <div class="col-md-12 mt-5 text-center py-4">
+               <div class="col-md-12 mt-5 text-black text-center py-4">
                     <h1>Delhi NCR Trial</h1>
                     <div class="dots text-center">
                         <div class="dot1"> </div>
@@ -394,7 +394,7 @@
 
 <!-- start advantages section -->
 
-<section class="advantages-section selection-process py-5">
+<section class="advantages-section selection-process text-black py-5">
     <div class="container py-5">
         <div class="container">
             <div class="row">

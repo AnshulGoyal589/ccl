@@ -80,7 +80,7 @@
     <section class="registraion-form-section">
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-8 text-white">
+                <div class="col-md-8 text-black">
                     <div class="text-center">
                         <h5>REGISTER NOW</h5>
                         <h5>For</h5>
@@ -176,7 +176,7 @@
                         <!-- Referral Code Field -->
                         <div class="mb-3">
                            <input type="text" name="c-code" class="form-control" id="c-code" placeholder="Your Referral Code">
-                           <p class="text-white">Leave this box blank if you do not have a code.</p>
+                           <p class="text-black">Leave this box blank if you do not have a code.</p>
                         </div>
 
                         <!-- Terms & Conditions Checkbox -->
