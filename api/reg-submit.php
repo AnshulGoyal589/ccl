@@ -23,7 +23,7 @@ echo "<pre>" . print_r($_POST, true) . "</pre>";
 
 // Include PHPMailer - with error checking
 echo "<p><strong>Loading PHPMailer...</strong></p>";
-if (!file_exists(__DIR__ . '/phpmailer/PHPMailer.php')) { // Use __DIR__ for robustness
+if (!file_exists(dirname(__DIR__) . '/phpmailer/PHPMailer.php')) { // Use dirname(__DIR__) for robustness
     die('<p style="color: red;">Error: PHPMailer not found. Please ensure phpmailer folder exists with PHPMailer.php file in the same directory as this script.</p>');
 }
 
@@ -36,20 +36,20 @@ use PHPMailer\PHPMailer\SMTP;
 // use Google\Service\Sheets\ValueRange;
 
 
-require __DIR__ . '/phpmailer/Exception.php';
-require __DIR__ . '/phpmailer/PHPMailer.php';
-require __DIR__ . '/phpmailer/SMTP.php';
+require dirname(__DIR__) . '/phpmailer/Exception.php';
+require dirname(__DIR__) . '/phpmailer/PHPMailer.php';
+require dirname(__DIR__) . '/phpmailer/SMTP.php';
 echo "<p style='color: green;'>✓ PHPMailer loaded successfully</p>";
 
 // Check Google Sheets dependencies
 echo "<p><strong>Checking Google Sheets...</strong></p>";
 $useGoogleSheets = false; // Default to false
-if (!file_exists(__DIR__ . '/vendor/autoload.php')) {
+if (!file_exists(dirname(__DIR__) . '/vendor/autoload.php')) {
     echo '<p style="color: orange;">Warning: Google Sheets vendor/autoload.php not found. Skipping Google Sheets integration.</p>';
 } else {
-    require __DIR__ . '/vendor/autoload.php';
+    require dirname(__DIR__) . '/vendor/autoload.php';
     echo "<p style='color: green;'>✓ Google Sheets autoloader found</p>";
-    // if (!file_exists(__DIR__ . '/credentials.json')) {
+    // if (!file_exists(dirname(__DIR__) . '/credentials.json')) {
     //     echo '<p style="color: orange;">Warning: credentials.json not found. Google Sheets integration will likely fail or be skipped.</p>';
     // } else {
         $useGoogleSheets = true; // Set to true only if both autoload and credentials seem present
@@ -113,7 +113,7 @@ try {
             $client = new \Google\Client(); // Use fully qualified name or ensure 'use Google\Client;' is active
             $client->setApplicationName('Champion Cricket League Registration');
             $client->setScopes([\Google\Service\Sheets::SPREADSHEETS]);
-            // $client->setAuthConfig(__DIR__ . '/credentials.json'); // Use __DIR__ for path
+            // $client->setAuthConfig(dirname(__DIR__) . '/credentials.json'); // Use dirname(__DIR__) for path
             $client->setAccessType('offline');
 
             $service = new \Google\Service\Sheets($client);

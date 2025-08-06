@@ -8,7 +8,7 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 
 // Include Google Sheets
-require __DIR__ . '/vendor/autoload.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
 use Google\Client;
 use Google\Service\Sheets;
 use Google\Service\Sheets\ValueRange;
