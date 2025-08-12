@@ -1,156 +1,264 @@
 <?php
-// Include PHPMailer
+// Debug version - shows detailed error information
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('log_errors', 1); // Good to have for server logs
+
+echo "<h3>Debug Information</h3>";
+echo "<p><strong>Request Method:</strong> " . $_SERVER['REQUEST_METHOD'] . "</p>";
+
+// Check if form was submitted
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    // For a script that processes form data, it's crucial.
+    // If this script could also be accessed via GET for other purposes, this die() might be too restrictive.
+    // Assuming it's only for POST form submission.
+    echo '<p style="color: red;">Error: Invalid request method. Form must be submitted via POST.</p>';
+    // It's often better to redirect or show a user-friendly page than just die() with debug info.
+    // For now, keeping it as is for debugging.
+    exit; // Exit to prevent further script execution if not POST
+}
+
+echo "<p><strong>POST Data Received:</strong></p>";
+echo "<pre>" . print_r($_POST, true) . "</pre>";
+
+// Include PHPMailer - with error checking
+echo "<p><strong>Loading PHPMailer...</strong></p>";
+if (!file_exists(dirname(__DIR__) . '/phpmailer/PHPMailer.php')) { // Use dirname(__DIR__) for robustness
+    die('<p style="color: red;">Error: PHPMailer not found. Please ensure phpmailer folder exists with PHPMailer.php file in the same directory as this script.</p>');
+}
+
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\Exception as PHPMailerException; // Aliasing to avoid conflict if Google Exception is used
+use PHPMailer\PHPMailer\SMTP;
+// Assuming Google Client classes are properly autoloaded if $useGoogleSheets is true
 
-require 'phpmailer/Exception.php';
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
 
-// Include Google Sheets
-require dirname(__DIR__) . '/vendor/autoload.php';
-use Google\Client;
-use Google\Service\Sheets;
-use Google\Service\Sheets\ValueRange;
+
+require dirname(__DIR__) . '/phpmailer/Exception.php';
+require dirname(__DIR__) . '/phpmailer/PHPMailer.php';
+require dirname(__DIR__) . '/phpmailer/SMTP.php';
+echo "<p style='color: green;'>✓ PHPMailer loaded successfully</p>";
+
+// Check Google Sheets dependencies
+echo "<p><strong>Checking Google Sheets...</strong></p>";
+$useGoogleSheets = false; // Default to false
+if (!file_exists(dirname(__DIR__) . '/vendor/autoload.php')) {
+    echo '<p style="color: orange;">Warning: Google Sheets vendor/autoload.php not found. Skipping Google Sheets integration.</p>';
+} else {
+    require dirname(__DIR__) . '/vendor/autoload.php';
+    echo "<p style='color: green;'>✓ Google Sheets autoloader found</p>";
+    // if (!file_exists(dirname(__DIR__) . '/credentials.json')) {
+    //     echo '<p style="color: orange;">Warning: credentials.json not found. Google Sheets integration will likely fail or be skipped.</p>';
+    // } else {
+        $useGoogleSheets = true; // Set to true only if both autoload and credentials seem present
+        // echo "<p style='color: green;'>✓ credentials.json found. Google Sheets integration will be attempted.</p>";
+    // }
+}
+
+
+// Validate required fields
+echo "<p><strong>Validating form data...</strong></p>";
+$required_fields = ['name', 'age', 'phone', 'email', 'speciality', 'state', 'city'];
+$missing_fields = [];
+
+foreach ($required_fields as $field) {
+    if (empty($_POST[$field])) {
+        $missing_fields[] = $field;
+    }
+}
+
+if (!empty($missing_fields)) {
+    // For a debug script, die is okay. For production, redirect with error message.
+    die('<p style="color: red;">Error: Missing required fields: ' . implode(', ', array_map('htmlspecialchars', $missing_fields)) . '</p>');
+}
+
+// Validate email format
+if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    die('<p style="color: red;">Error: Invalid email format: ' . htmlspecialchars($_POST['email']) . '</p>');
+}
+
+echo "<p style='color: green;'>✓ All form validation passed</p>";
 
 try {
-    // Google Sheets Configuration
-    $client = new Google\Client();
-    $client->setApplicationName('Champion Cricket League Registration');
-    $client->setScopes([Google\Service\Sheets::SPREADSHEETS]);
-    // $client->setAuthConfig('credentials.json');
-    $client->setAccessType('offline');
-
-    $service = new Google\Service\Sheets($client);
-    $spreadsheetId = '1Xftm2YunRej0XbvGgKUOWAkC-QGTQqHFoDhvpMmEUAo';
-
-    // Prepare registration data
+    // Sanitize input data
     $regId = 'CCLREG' . date('YmdHis');
-    $values = [
-        [
-            $regId,
-            date('d-M-Y H:i:s'),
-            $_POST['name'],
-            $_POST['age'],
-            $_POST['phone'],
-            $_POST['email'],
-            $_POST['speciality'],
-            $_POST['state'],
-            $_POST['city'],
-            $_POST['c-code'] ?? 'N/A',
-            // $_POST['transactionId'] ?? 'N/A'
-        ]
-    ];
+    $name = htmlspecialchars(trim($_POST['name']), ENT_QUOTES, 'UTF-8');
+    $age = htmlspecialchars(trim($_POST['age']), ENT_QUOTES, 'UTF-8');
+    $phone = htmlspecialchars(trim($_POST['phone']), ENT_QUOTES, 'UTF-8');
+    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL); // Use filter_var for email sanitization
+    $speciality = htmlspecialchars(trim($_POST['speciality']), ENT_QUOTES, 'UTF-8');
+    $state = htmlspecialchars(trim($_POST['state']), ENT_QUOTES, 'UTF-8');
+    $city = htmlspecialchars(trim($_POST['city']), ENT_QUOTES, 'UTF-8');
+    $couponCode = isset($_POST['c-code']) && trim($_POST['c-code']) !== '' ? htmlspecialchars(trim($_POST['c-code']), ENT_QUOTES, 'UTF-8') : 'N/A';
 
-    $body = new Google\Service\Sheets\ValueRange([
-        'values' => $values
-    ]);
+    echo "<p><strong>Sanitized Data:</strong></p>";
+    echo "<ul>";
+    echo "<li>Registration ID: $regId</li>";
+    echo "<li>Name: $name</li>";
+    echo "<li>Age: $age</li>";
+    echo "<li>Phone: $phone</li>";
+    echo "<li>Email: $email</li>";
+    echo "<li>Speciality: $speciality</li>";
+    echo "<li>State: $state</li>";
+    echo "<li>City: $city</li>";
+    echo "<li>Coupon Code: $couponCode</li>";
+    echo "</ul>";
 
-    // Append data to Google Sheet
-    $result = $service->spreadsheets_values->append(
-        $spreadsheetId,
-        'Sheet1!A:J', // Assuming your sheet is named 'Sheet1' and you want to append to columns A through J
-        $body,
-        ['valueInputOption' => 'RAW']
-    );
+    // Google Sheets Integration (if available)
+    if ($useGoogleSheets) {
+        echo "<p><strong>Attempting Google Sheets integration...</strong></p>";
+        try {
+            $client = new \Google\Client(); // Use fully qualified name or ensure 'use Google\Client;' is active
+            $client->setApplicationName('Champion Cricket League Registration');
+            $client->setScopes([\Google\Service\Sheets::SPREADSHEETS]);
+            // This line is commented out. For the API call to work, you MUST uncomment it and provide a valid credentials.json file.
+            // $client->setAuthConfig(dirname(__DIR__) . '/credentials.json'); // Use dirname(__DIR__) for path
+            $client->setAccessType('offline');
+
+            $service = new \Google\Service\Sheets($client);
+            $spreadsheetId = '1CV06Zv0bE47aFHV9lsGRoIZCdHUhHGgj62P0M4GRcAw'; // Ensure this ID is correct
+
+            $values = [
+                [
+                    $regId,
+                    date('d-M-Y H:i:s'),
+                    $name,
+                    $age,
+                    $phone,
+                    $email,
+                    $speciality,
+                    $state,
+                    $city,
+                    $couponCode
+                ]
+            ];
+
+            $body = new \Google\Service\Sheets\ValueRange([
+                'values' => $values
+            ]);
+
+            $result = $service->spreadsheets_values->append(
+                $spreadsheetId,
+                'Sheet1!A:J', // Ensure 'Sheet1' is the correct sheet name
+                $body,
+                ['valueInputOption' => 'USER_ENTERED'] // Changed to USER_ENTERED, RAW is also fine
+            );
+
+            echo "<p style='color: green;'>✓ Data saved to Google Sheets successfully. Updates: " . htmlspecialchars(json_encode($result->getUpdates())) . "</p>";
+
+        } catch (\Google\Exception $e) { // More specific catch for Google API errors
+            echo "<p style='color: orange;'>Warning: Google Sheets API Error - " . htmlspecialchars($e->getMessage()) . "</p>";
+            echo "<p>Continuing process if possible...</p>";
+            // Log this error for server-side review: error_log('Google Sheets API Error: ' . $e->getMessage());
+        } catch (Exception $e) { // Generic catch for other issues during GSheets setup
+            echo "<p style='color: orange;'>Warning: Google Sheets integration failed (general error) - " . htmlspecialchars($e->getMessage()) . "</p>";
+            echo "<p>Continuing process if possible...</p>";
+            // Log this error: error_log('Google Sheets General Error: ' . $e->getMessage());
+        }
+    } else {
+        echo "<p style='color: #cc8400;'>Skipping Google Sheets integration (dependencies not met or disabled).</p>";
+    }
+
+    // Initialize PHPMailer (The code inside is commented out by default)
+    $phpMailerActive = false; // Set this to true to enable email sending
+
+    if ($phpMailerActive) {
+        echo "<p><strong>Initializing email...</strong></p>";
+        $mail = new PHPMailer(true);
+
+        // Enable debug output
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        $mail->Debugoutput = function($str, $level) {
+            echo "<p style='color: blue; font-size: 12px;'>SMTP DEBUG ($level): " . htmlspecialchars($str) . "</p>";
+        };
+
+        // SMTP Configuration
+        $mail->isSMTP();
+        $mail->Host = 'smtp-mail.outlook.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'championcricketleague@outlook.com'; // Replace with actual username
+        $mail->Password = 'zpzjhpdrglotoizx'; // Replace with actual password or app password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+        $mail->Timeout = 60;
+        
+        echo "<p style='color: green;'>✓ SMTP configuration set</p>";
+
+        // Recipients
+        $mail->setFrom('championcricketleague@outlook.com', 'Champion Cricket League');
+        $mail->addAddress('championcricketleague@outlook.com', 'Champion Cricket League Admin'); // Send to admin
+        $mail->addReplyTo($email, $name);
+        
+        echo "<p style='color: green;'>✓ Email recipients set</p>";
+
+        // Content
+        $mail->isHTML(true);
+        $mail->Subject = 'New Cricket League Registration - ' . $name;
+        $mail->Body = '
+        <h3 style="text-align: center;">New Registration Enquiry</h3>
+        <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
+            <tr><td style="width:30%;"><strong>Registration ID</strong></td><td>' . $regId . '</td></tr>
+            <tr><td><strong>Name</strong></td><td>' . $name . '</td></tr>
+            <tr><td><strong>Age</strong></td><td>' . $age . '</td></tr>
+            <tr><td><strong>Mobile</strong></td><td>' . $phone . '</td></tr>
+            <tr><td><strong>Email</strong></td><td>' . $email . '</td></tr>
+            <tr><td><strong>Specialty</strong></td><td>' . $speciality . '</td></tr>
+            <tr><td><strong>State</strong></td><td>' . $state . '</td></tr>
+            <tr><td><strong>City</strong></td><td>' . $city . '</td></tr>
+            <tr><td><strong>Coupon Code</strong></td><td>' . $couponCode . '</td></tr>
+            <tr><td><strong>Date</strong></td><td>' . date('d-M-Y H:i:s') . '</td></tr>
+        </table>';
+
+        $mail->AltBody = "Registration Details:\nID: $regId\nName: $name\nAge: $age\nMobile: $phone\nEmail: $email\nSpecialty: $speciality\nState: $state\nCity: $city\nCoupon: $couponCode\nDate: " . date('d-M-Y H:i:s');
+
+        echo "<p style='color: green;'>✓ Email content prepared</p>";
+        echo "<p><strong>Attempting to send email...</strong></p>";
+
+        $mail->send();
+        echo "<p style='color: green; font-size: 18px;'>✓ SUCCESS: Email sent successfully!</p>";
+
+    } else {
+       echo "<p style='color: #cc8400;'>Skipping Email sending (PHPMailer section is disabled).</p>";
+    }
 
 
-
-    // Initialize PHPMailer (Commented out as per original code)
-    // $mail = new PHPMailer(true);
-
-    // // Server settings
-    // $mail->isSMTP();
-    // $mail->Host = 'smtp.hostinger.com';
-    // $mail->SMTPAuth = true;
-    // $mail->Username = 'coscocricketleague9@gmail.com';
-    // $mail->Password = 'Pass@#123';
-    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    // $mail->Port = 465;
-
-    // // Recipients
-    // $mail->setFrom('coscocricketleague9@gmail.com', 'Champion Cricket League');
-    // $mail->addAddress('coscocricketleague9@gmail.com');
-
-    // // Content
-    // $mail->isHTML(true);
-    // $mail->Subject = 'Cosco Registration Enquiry';
-    // $mail->Body = '
-    // <h3 align="center">Enquiry Form</h3>
-    // <table border="1" width="100%" cellpadding="5" cellspacing="5">
-    //     <tr>
-    //         <td width="30%">Name</td>
-    //         <td width="70%">'.htmlspecialchars($_POST["name"]).'</td>
-    //     </tr>
-    //     <tr>
-    //         <td width="30%">Age</td>
-    //         <td width="70%">'.htmlspecialchars($_POST["age"]).'</td>
-    //     </tr>
-    //     <tr>
-    //         <td width="30%">Mobile</td>
-    //         <td width="70%">'.htmlspecialchars($_POST["phone"]).'</td>
-    //     </tr>
-    //     <tr>
-    //         <td width="30%">Email</td>
-    //         <td width="70%">'.htmlspecialchars($_POST["email"]).'</td>
-    //     </tr>
-    //     <tr>
-    //         <td width="30%">Specialty</td>
-    //         <td width="70%">'.htmlspecialchars($_POST["speciality"]).'</td>
-    //     </tr>
-    //     <tr>
-    //         <td width="30%">Coupon Code</td>
-    //         <td width="70%">'.htmlspecialchars($_POST["c-code"] ?? "N/A").'</td> // Corrected duplicate key and used null coalescing
-    //     </tr>
-    //     <tr>
-    //         <td width="30%">State</td>
-    //         <td width="70%">'.htmlspecialchars($_POST["state"]).'</td>
-    //     </tr>
-    //     <tr>
-    //         <td width="30%">City</td>
-    //         <td width="70%">'.htmlspecialchars($_POST["city"]).'</td>
-    //     </tr>
-    // </table>'; // Removed duplicate "Coupon Code" row from HTML body as it was already present
-
-    // // Plain text alternative
-    // $mail->AltBody = "Registration Details:\n\n" .
-    //     "Name: " . $_POST["name"] . "\n" .
-    //     "Age: " . $_POST["age"] . "\n" .
-    //     "Mobile: " . $_POST["phone"] . "\n" .
-    //     "Email: " . $_POST["email"] . "\n" .
-    //     "Specialty: " . $_POST["speciality"] . "\n" .
-    //     // "Transaction ID: " . $_POST["transactionId"] . "\n" .
-    //     "Coupon Code: " . ($_POST["c-code"] ?? "N/A") . "\n" . // Used null coalescing
-    //     "State: " . $_POST["state"] . "\n" .
-    //     "City: " . $_POST["city"] . "\n"; // Removed duplicate "Coupon Code" from AltBody
-
-    // // Send email
-    // $mail->send();
-
-    // Success response
+    // --- Successful Completion Point ---
+    echo "<hr><p style='color:green; font-weight:bold;'>All processing steps completed (see logs above for details).</p>";
     echo "
     <script>
-    alert('Registration Enquiry Sent Successfully');
-    document.location.href = '/';
+        alert('Enquiry Sent successfully!');
+        window.location.href = '/';
     </script>
     ";
+    exit; // Crucial to prevent any further output below this point after starting the redirect.
 
-} catch (Exception $e) {
-    // Error handling
-    $errorMessage = "An error occurred: " . $e->getMessage();
-    // The $mail variable might not be defined if the error occurs before PHPMailer initialization
-    // So, we check if it's set and if ErrorInfo property exists before trying to access it.
-    // if (isset($mail) && property_exists($mail, 'ErrorInfo')) {
-    //     $errorMessage .= "\nMailer Error: " . $mail->ErrorInfo;
-    // }
-    // Since PHPMailer is commented out, the $mail->ErrorInfo part is not relevant for now.
-    // If you uncomment PHPMailer, ensure $mail is defined before this check.
-    error_log("Error in registration script: " . $errorMessage); // Log error for server-side debugging
+} catch (PHPMailerException $e) { // Catch PHPMailer specific exceptions first
+    echo "<h3 style='color: red;'>PHPMailer Error:</h3>";
+    echo "<p style='color: red;'>Message: " . htmlspecialchars($e->errorMessage()) . "</p>";
+    if (isset($mail) && !empty($mail->ErrorInfo)) {
+         echo "<p style='color: red;'>Mailer ErrorInfo: " . htmlspecialchars($mail->ErrorInfo) . "</p>";
+    }
+    error_log("PHPMailer Error: " . $e->errorMessage() . (isset($mail) ? " | MailerInfo: " . $mail->ErrorInfo : ""));
+    echo "<script>alert('A critical error occurred while trying to send an email. Please contact support. Details: " . addslashes($e->errorMessage()) . "'); window.location.href = '/';</script>";
+    exit;
+
+} catch (Exception $e) { // Catch all other general exceptions
+    echo "<h3 style='color: red;'>A Critical Error Occurred:</h3>";
+    echo "<p style='color: red;'><strong>Error Type:</strong> " . get_class($e) . "</p>";
+    echo "<p style='color: red;'><strong>Error Message:</strong> " . htmlspecialchars($e->getMessage()) . "</p>";
+    echo "<p style='color: red;'><strong>File:</strong> " . $e->getFile() . "</p>";
+    echo "<p style='color: red;'><strong>Line:</strong> " . $e->getLine() . "</p>";
+    
+    error_log("Critical Error: " . $e->getMessage() . " in " . $e->getFile() . " on line " . $e->getLine() . "\nStack Trace:\n" . $e->getTraceAsString());
+
+    echo "<h4>Stack Trace:</h4>";
+    echo "<pre style='color: red; font-size: 12px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;'>" . htmlspecialchars($e->getTraceAsString()) . "</pre>";
     echo "
     <script>
-    alert('An error occurred during registration. Please try again later. Error: ".addslashes($e->getMessage())."');
-    document.location.href = '/'; // Or a specific error page
+        alert('An unexpected error occurred. Please try again later. Error: ".addslashes($e->getMessage())."');
+        window.location.href = '/';
     </script>
     ";
+    exit;
 }
 ?>

@@ -31,9 +31,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception as PHPMailerException; // Aliasing to avoid conflict if Google Exception is used
 use PHPMailer\PHPMailer\SMTP;
 // Assuming Google Client classes are properly autoloaded if $useGoogleSheets is true
-// use Google\Client;
-// use Google\Service\Sheets;
-// use Google\Service\Sheets\ValueRange;
+
 
 
 require dirname(__DIR__) . '/phpmailer/Exception.php';

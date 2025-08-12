@@ -182,7 +182,7 @@
                         <!-- Terms & Conditions Checkbox -->
                         <div class="mb-3 form-check">
                             <input type="checkbox" required class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1"><a href="terms-conditions.php">Terms & Conditions</a></label>
+                            <label class="form-check-label" for="exampleCheck1"><a href="terms-conditions.php" class="text-black" >Terms & Conditions</a></label>
                         </div>
 
                         <!-- Submit Button -->

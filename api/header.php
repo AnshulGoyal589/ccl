@@ -55,11 +55,11 @@
                     </div>
                 </div>
 
-                <div class="col-lg-7 col-md-8 col-sm-12 d-flex align-items-center  gap-3 py-2" id="mobile-none">
+                <div class="col-lg-8 col-md-8 col-sm-12 d-flex align-items-center  gap-3 py-2 " id="mobile-none">
                     <span class="ms-3">Last Date to Register: 16th August 2025 | Fees Increasing Soon - Register Now</span>
                 </div>
                 <!-- Language Selector and Register Button -->
-                <div class="col-lg-2 col-md-4 col-sm-12 col-4 user-section gap-3">
+                <div class="col-lg-1 col-md-2 col-sm-12 col-4 user-section gap-3">
 
                     <!-- login page is created -->
                     <a href="registration.php"> <i class="fa-solid fa-user"></i></a>
