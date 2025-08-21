@@ -1,12 +1,12 @@
 <?php include 'header.php'; ?>
 
 <section>
-    <div class="container py-5">
+    <div class="container py-5 ">
         <div class="row">
             <div class="col-md-12">
                 <h5 class="py-3 blue-color">
                     Champion Cricket League </h5>
-                <h1>Terms and Conditions</h1>
+                <h1 >Terms and Conditions</h1>
 
                 <h4 class="pt-3">1. Acceptance of Terms</h4>
 
