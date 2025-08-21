@@ -13,7 +13,7 @@ return [
         'password'  => 'tugb rfwv snxr npgu', // IMPORTANT: This is NOT your regular password
     ],
 
-    // Google Sheets API Settings
+    // Google Sheets API Settingsrm =-rg
     'google_sheets' => [
         'credentials_path' => dirname(__DIR__) . '/credentials.json', // Path to your Google credentials file
         'spreadsheet_id'   => '1CV06Zv0bE47aFHV9lsGRoIZCdHUhHGgj62P0M4GRcAw', // Your Google Sheet ID
