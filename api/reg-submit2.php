@@ -90,7 +90,7 @@ try {
             $values = [[$regId, date('d-M-Y H:i:s'), $name, $age, $phone, $email, $speciality, $state, $city, $couponCode]];
             $body = new \Google\Service\Sheets\ValueRange(['values' => $values]);
 
-            $result = $service->spreadsheets_values->append($spreadsheetId, 'Sheet1!A:J', $body, ['valueInputOption' => 'USER_ENTERED']);
+            $result = $service->spreadsheets_values->append($spreadsheetId, 'Sheet2!A:J', $body, ['valueInputOption' => 'USER_ENTERED']);
             echo "<p style='color: green;'>✓ Data saved to Google Sheets successfully.</p>";
 
         } catch (\Exception $e) { // Catch any exception related to Google API
