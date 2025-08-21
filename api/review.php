@@ -7,7 +7,7 @@
 
         <div class="row">
             <div class="col-lg-8">
-                <h6 class="text-primary">Testimonials-</h6>
+                <h6 class="text-primary">Testimonials</h6>
                 <h2>Trusted by Thousands of Players <br> and Coaches</h2>
 
 
