@@ -68,7 +68,7 @@
         <span class="close-popup">&times;</span>
         <div class="popup-content">
             <h4>Payment QR Code</h4>
-            <img height="250" width="250" src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969781/qr4_wkvbl6.jpg" alt="QR Code">
+            <img height="250" width="250" src="/images/qr.jpg" alt="QR Code">
             <p>Please scan this QR code to complete your payment.</p>
         </div>
     </div>
@@ -232,7 +232,7 @@
                         </div> -->
                     </div>
                     <div class="text-center mt-3">
-                        <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969781/qr4_wkvbl6.jpg" alt="QR Code" height="250" width="250">
+                        <img src="/images/qr.jpg" alt="QR Code" height="250" width="250">
                     </div>
                 </div>
             </div>
