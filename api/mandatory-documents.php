@@ -9,7 +9,7 @@
                 <h2>Mandatory Documents for Selection Camp</h2>
                 <p>
 
-                    To join the selection camp, the following documents are mandatory. Please scan these documents and
+                    To join  the selection camp, the following documents are mandatory. Please scan these documents and
                     send them to the email address championcricketleague@outlook.com . Note that without these documents, you will not
                     be allowed to participate in the selection camp, and the fee paid will not be refunded under any
                     circumstances.
