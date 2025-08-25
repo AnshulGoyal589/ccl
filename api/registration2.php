@@ -72,7 +72,7 @@
         <span class="close-popup">&times;</span>
         <div class="popup-content">
             <h4>Payment QR Code</h4>
-            <img height="400" src="/images/qr.jpg" alt="QR Code">
+            <img height="400" src="https://res.cloudinary.com/db1szsk6y/image/upload/v1756139103/qr_fx5kov.jpg" alt="QR Code">
             <p>Please scan this QR code to complete your payment.</p>
         </div>
     </div>
@@ -199,7 +199,7 @@
                             <li class="mb-3"><strong>All Rounder/Wicket Keeper:</strong> ₹999 + GST</li>
                         </ul>
                     </div>
-                    <img height="400" src="/images/qr.jpg" alt="QR Code">
+                    <img height="400" src="https://res.cloudinary.com/db1szsk6y/image/upload/v1756139103/qr_fx5kov.jpg" alt="QR Code">
                 </div>
             </div>
         </div>
