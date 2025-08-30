@@ -4,12 +4,14 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ini_set('log_errors', 1); // Good to have for server logs
 
-// --- 1. Load Configuration ---
+// --- 1. Load Configuration --- 
 echo "<h3>Debug Information</h3>";
 echo "<p><strong>Loading configuration...</strong></p>";
-$configFile = dirname(__DIR__, 2) . '/config/config.php';
+$configFile = dirname(__DIR__) . '/config/config.php';
 if (!file_exists($configFile)) {
-    die('<p style="color: red;">CRITICAL ERROR: Configuration file not found. Please create config.php.</p>');
+    echo "<p>Config File: " . htmlspecialchars($configFile) . "</p>";
+    die('<p style="color: red;">CRITICAL ERROR: Configurationn file not found. Please create config.php.</p>');
+    // print configFile
 }
 $config = require $configFile;
 echo "<p style='color: green;'>✓ Configuration loaded successfully</p>";
@@ -17,7 +19,7 @@ echo "<p style='color: green;'>✓ Configuration loaded successfully</p>";
 
 // --- 2. Unified Dependency Loading (Composer) ---
 echo "<p><strong>Loading dependencies via Composer...</strong></p>";
-$autoloader = dirname(__DIR__, 2) . '/vendor/autoload.php';
+$autoloader = dirname(__DIR__) . '/vendor/autoload.php';
 if (!file_exists($autoloader)) {
     die('<p style="color: red;">CRITICAL ERROR: Composer autoloader not found. Please run "composer install".</p>');
 }
