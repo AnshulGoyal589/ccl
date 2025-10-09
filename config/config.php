@@ -10,7 +10,7 @@ return [
         'host'      => 'smtp.gmail.com',         // Gmail's SMTP server
         'port'      => 587,                      // Use 587 for TLS (recommended) or 465 for SSL
         'username'  => 'ccl19175131@gmail.com', // Your Gmail address
-        'password'  => 'tugb rfwv snxr npgu', // IMPORTANT: This is NOT your regular password
+        'password'  => 'htvi fbak jtip gjhm', // IMPORTANT: This is NOT your regular password
     ],
 
     // Google Sheets API Settingsrm =-rg

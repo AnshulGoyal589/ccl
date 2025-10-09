@@ -53,7 +53,7 @@
 <div class="container py-2 py-lg-5">
     <div class="row py-4">
         <div class="col-md-8 mt-5 pt-lg-5">
-            <h3 class="section animate-on-scroll slide-right">About Us</h3>
+            <h3 class="section animate-on-scroll slide-right">About Champion Cricket League</h3>
             <p class="section animate-on-scroll slide-left">Welcome to Champion Cricket League, where passion meets
                 excellence! Established with the mission
                 to nurture and develop the next generation of cricket stars, our academy is committed to providing a
@@ -69,7 +69,7 @@
                 <i class="fa-solid fa-angle-right"></i></a>
         </div>
         <div class="col-md-4 py-3">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969713/match_jowtod.jpg" class="w-100 about-image" alt="about-image">
+            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760028219/6d0a2ed1-d067-4fb4-8053-5cc92578186b_ev2yy0.jpg" class="w-100 about-image" alt="about-image">
         </div>
     </div>
 
