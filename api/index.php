@@ -142,33 +142,30 @@
 
                  <div class="col-md-3 col-3">
 
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961121/fdb44b97-6db3-4592-9d0a-571c7144328f.png" alt="Image 14" onclick="openLightbox(); setCurrentSlide(17)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961179/399eacf0-91db-4f07-8dd3-14e55f453ae7.png" alt="Image 15" onclick="openLightbox(); setCurrentSlide(18)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961455/decab115-760b-4a65-9e24-7fc9223420bc.png" alt="Image 15" onclick="openLightbox(); setCurrentSlide(19)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030340/IMG_8613_fyc9at.jpg" alt="Image 14" onclick="openLightbox(); setCurrentSlide(17)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030340/IMG_8611_m8pwkx.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(18)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8603_lwbztj.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(19)">
                    
 
                 </div>
                  <div class="col-md-3 col-3">
 
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961239/d534071e-e4ce-4455-8b24-982dbf7f7d6c.png" alt="Image 14" onclick="openLightbox(); setCurrentSlide(20)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961275/131d2169-60ab-42b4-be7a-2837e967e248.png" alt="Image 15" onclick="openLightbox(); setCurrentSlide(21)">
-                     <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961489/05539b18-7c71-43d3-a717-488591d660ab.png" alt="Image 15" onclick="openLightbox(); setCurrentSlide(22)">
-                   
-
-                </div>
-                 <div class="col-md-3 col-3">
-
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961311/f723314b-2858-4116-b4e9-6f6f9acf1ee5.png" alt="Image 14" onclick="openLightbox(); setCurrentSlide(23)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961346/c2a08f5a-ab6c-43d3-97f8-7612b22b6061.png" alt="Image 15" onclick="openLightbox(); setCurrentSlide(24)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8605_s09ol4.jpg" alt="Image 14" onclick="openLightbox(); setCurrentSlide(20)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8591_ojf25d.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(21)">
                     
-
+                    
                 </div>
-                 <div class="col-md-3 col-3">
-
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961385/3fa2fcd9-aed9-433e-9b66-f5b2fc95fc2f.png" alt="Image 14" onclick="openLightbox(); setCurrentSlide(25)">
-                 
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961421/94fab1ca-fb8e-4b08-b002-d300f37374ed.png" alt="Image 16" onclick="openLightbox(); setCurrentSlide(26)">
-
+                <div class="col-md-3 col-3">
+                    
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8600_x5acdi.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(22)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8584_xaa4cq.jpg" alt="Image 14" onclick="openLightbox(); setCurrentSlide(23)">
+                    
+                </div>
+                <div class="col-md-3 col-3">
+                    
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8596_fnpvbp.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(24)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030338/IMG_8582_s1juld.jpg" alt="Image 16" onclick="openLightbox(); setCurrentSlide(24)">
+                    
                 </div>
             </div>
             
