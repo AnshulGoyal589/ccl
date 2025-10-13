@@ -84,7 +84,7 @@
 <section class="selection-process py-5">
     <div class="gallery">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-12 text-center text-black py-4">
                     <h1>Gallery</h1>
                     <div class="dots text-center">
@@ -127,7 +127,7 @@
                     <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969654/g16_hcjji1.jpg" alt="Image 16" onclick="openLightbox(); setCurrentSlide(16)">
 
                 </div>
-            </div>
+            </div> -->
             
             <div class="row">
                <div class="col-md-12 mt-5 text-black text-center py-4">
@@ -142,33 +142,140 @@
 
                  <div class="col-md-3 col-3">
 
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030340/IMG_8613_fyc9at.jpg" alt="Image 14" onclick="openLightbox(); setCurrentSlide(17)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030340/IMG_8611_m8pwkx.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(18)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8603_lwbztj.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(19)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030340/IMG_8613_fyc9at.jpg" alt="Image 17" onclick="openLightbox(); setCurrentSlide(17)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030340/IMG_8611_m8pwkx.jpg" alt="Image 18" onclick="openLightbox(); setCurrentSlide(18)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8603_lwbztj.jpg" alt="Image 19" onclick="openLightbox(); setCurrentSlide(19)">
                    
 
                 </div>
                  <div class="col-md-3 col-3">
 
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8605_s09ol4.jpg" alt="Image 14" onclick="openLightbox(); setCurrentSlide(20)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8591_ojf25d.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(21)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8605_s09ol4.jpg" alt="Image 20" onclick="openLightbox(); setCurrentSlide(20)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8591_ojf25d.jpg" alt="Image 21" onclick="openLightbox(); setCurrentSlide(21)">
                     
                     
                 </div>
                 <div class="col-md-3 col-3">
                     
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8600_x5acdi.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(22)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8584_xaa4cq.jpg" alt="Image 14" onclick="openLightbox(); setCurrentSlide(23)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8600_x5acdi.jpg" alt="Image 22" onclick="openLightbox(); setCurrentSlide(22)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8584_xaa4cq.jpg" alt="Image 23" onclick="openLightbox(); setCurrentSlide(23)">
                     
                 </div>
                 <div class="col-md-3 col-3">
                     
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8596_fnpvbp.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(24)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030338/IMG_8582_s1juld.jpg" alt="Image 16" onclick="openLightbox(); setCurrentSlide(24)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8596_fnpvbp.jpg" alt="Image 24" onclick="openLightbox(); setCurrentSlide(24)">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030338/IMG_8582_s1juld.jpg" alt="Image 25" onclick="openLightbox(); setCurrentSlide(25)">
                     
                 </div>
             </div>
             
+            <!-- Gallery Slider -->
+             <div class="row">
+                <div class="col-md-12 mt-5 text-black text-center py-4">
+                     <h1>Gujarat Trials</h1>
+                     <div class="dots text-center">
+                         <div class="dot1"> </div>
+                         <div class="dot1"></div>
+                         <div class="dot1"></div>
+                         <div class="dot2"></div>
+                     </div>
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="gallery-slider-container">
+                        <div class="gallery-slider d-flex justify-content-center align-items-center flex-row flex-nowrap" style="gap: 16px;">
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203495/IMG_8120_1_psnhrs.jpg" alt="Slider Image 1">
+                            </div>
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203494/IMG_8119_1_m40f15.jpg" alt="Slider Image 2">
+                            </div>
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203494/IMG_8117_1_f9r06u.jpg" alt="Slider Image 3">
+                            </div>
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203487/IMG_8095_1_pclqkw.jpg" alt="Slider Image 4">
+                            </div>
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203482/IMG_8073_1_warwlv.jpg" alt="Slider Image 5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="row">
+                <div class="col-md-12 mt-5 text-black text-center py-4">
+                     <h1>Lucknow Trials</h1>
+                     <div class="dots text-center">
+                         <div class="dot1"> </div>
+                         <div class="dot1"></div>
+                         <div class="dot1"></div>
+                         <div class="dot2"></div>
+                     </div>
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="gallery-slider-container">
+                        <div class="gallery-slider d-flex justify-content-center align-items-center flex-row flex-nowrap" style="gap: 16px;">
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374918/S2190012_1_aaxcho.jpg" alt="Slider Image 1">
+                            </div>
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374918/S2190010_1_wzvyeo.jpg" alt="Slider Image 2">
+                            </div>
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374917/S2190013_1_ojawry.jpg" alt="Slider Image 3">
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-slider d-flex justify-content-center align-items-center flex-row flex-nowrap" style="gap: 16px;">
+                        <div>
+                            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374917/S2190008_1_xa5ase.jpg" alt="Slider Image 4">
+                        </div>
+                        <div>
+                            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374917/S2190011_1_wdj6ad.jpg" alt="Slider Image 5">
+                        </div>
+            </div>
+
+
+             <div class="row">
+                <div class="col-md-12 mt-5 text-black text-center py-4">
+                     <h1>MP Trials</h1>
+                     <div class="dots text-center">
+                         <div class="dot1"> </div>
+                         <div class="dot1"></div>
+                         <div class="dot1"></div>
+                         <div class="dot2"></div>
+                     </div>
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="gallery-slider-container">
+                        <div class="gallery-slider d-flex justify-content-center align-items-center flex-row flex-nowrap" style="gap: 16px;">
+
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760375118/IMG-20250907-WA0077_sst2ir.jpg" alt="Slider Image 1">
+                            </div>
+                            <!-- <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760375115/IMG-20250907-WA0076_epo6ne.jpg" alt="Slider Image 2">
+                            </div> -->
+                            <div>
+                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760375115/IMG-20250907-WA0072_btcgcx.jpg" alt="Slider Image 3">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -231,35 +338,35 @@
         
         
           <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961121/fdb44b97-6db3-4592-9d0a-571c7144328f.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961121/fdb44b97-6db3-4592-9d0a-571c7144328f.png" alt="Slide 17">
         </div>
           <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961179/399eacf0-91db-4f07-8dd3-14e55f453ae7.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961179/399eacf0-91db-4f07-8dd3-14e55f453ae7.png" alt="Slide 18">
         </div>
           <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961455/decab115-760b-4a65-9e24-7fc9223420bc.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961455/decab115-760b-4a65-9e24-7fc9223420bc.png" alt="Slide 19">
         </div>
           <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961239/d534071e-e4ce-4455-8b24-982dbf7f7d6c.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961239/d534071e-e4ce-4455-8b24-982dbf7f7d6c.png" alt="Slide 20">
         </div>
           <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961275/131d2169-60ab-42b4-be7a-2837e967e248.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961275/131d2169-60ab-42b4-be7a-2837e967e248.png" alt="Slide 21">
         </div>
           <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961489/05539b18-7c71-43d3-a717-488591d660ab.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961489/05539b18-7c71-43d3-a717-488591d660ab.png" alt="Slide 22">
         </div>
           <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961311/f723314b-2858-4116-b4e9-6f6f9acf1ee5.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961311/f723314b-2858-4116-b4e9-6f6f9acf1ee5.png" alt="Slide 23">
         </div>
           <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961346/c2a08f5a-ab6c-43d3-97f8-7612b22b6061.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961346/c2a08f5a-ab6c-43d3-97f8-7612b22b6061.png" alt="Slide 24">
         </div>
         
          <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961385/3fa2fcd9-aed9-433e-9b66-f5b2fc95fc2f.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961385/3fa2fcd9-aed9-433e-9b66-f5b2fc95fc2f.png" alt="Slide 25">
         </div>
          <div class="lightbox-slide">
-            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961421/94fab1ca-fb8e-4b08-b002-d300f37374ed.png" alt="Slide 16">
+            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753961421/94fab1ca-fb8e-4b08-b002-d300f37374ed.png" alt="Slide 26">
         </div>
 
 
@@ -1019,7 +1126,6 @@
 
 
 
-<!-- testimonial start -->
 <!-- Testimonial Section -->
 <section class="testimonials py-5 bg-light">
 
@@ -1277,45 +1383,74 @@
 </section>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize the new Gallery Slider
+        $('.gallery-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,      // Show 4 on large screens
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1024, // Tablets
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600, // Large mobiles
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480, // Small mobiles
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        // Your existing scroll animation script
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate');
-                    observer.unobserve(entry.target); // Stop observing once it becomes visible
+                    observer.unobserve(entry.target);
                 }
             });
         });
-
         animatedElements.forEach(element => {
             observer.observe(element);
         });
     });
-</script>
 
-<script>
+    // Your existing lightbox script
     let slideIndex = 1;
-
     function openLightbox() {
         document.getElementById("lightbox").style.display = "block";
         showSlide(slideIndex);
     }
-
     function closeLightbox() {
         document.getElementById("lightbox").style.display = "none";
     }
-
     function changeSlide(n) {
         showSlide(slideIndex += n);
     }
-
     function setCurrentSlide(n) {
         showSlide(slideIndex = n);
     }
-
     function showSlide(n) {
         const slides = document.getElementsByClassName("lightbox-slide");
         if (n > slides.length) { slideIndex = 1 }
@@ -1325,7 +1460,6 @@
         }
         slides[slideIndex - 1].style.display = "block";
     }
-
 </script>
 
 <?php include 'footer.php'; ?>
