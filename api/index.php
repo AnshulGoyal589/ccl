@@ -23,56 +23,71 @@
 </style>
 
 <!-- start banner  -->
-<section >
+<!-- <section >
      <video class="banner-video" autoplay loop muted playsinline preload="auto">
         <source src="https://res.cloudinary.com/dxk6wjttq/video/upload/v1753965775/banner_q6n28s.mp4"  type="video/mp4">
         Your browser does not support the video tag.
     </video>
     
+</section> -->
+
+<section class="bannere-section">
+    <div class="banner-carousel laptop-view owl-carousel">
+        <div class="item">
+            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544127/4_y11n7t.png" width="100%" alt="banner-image-1">
+        </div>
+        <div class="item">
+            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544118/6_ximsge.png" width="100%" alt="banner-image-2">
+        </div>
+        <div class="item">
+            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544117/5_hcetoi.png" width="100%" alt="banner-image-3">
+        </div>
+        <div class="item">
+            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544115/3_gpotyv.png" width="100%" alt="banner-image-4">
+        </div>
+    </div>
+
+    <div class="banner-carousel mobile-view owl-carousel">
+        <div class="item">
+            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544127/4_y11n7t.png" width="100%" alt="banner-image-1">
+        </div>
+        <div class="item">
+            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544118/6_ximsge.png" width="100%" alt="banner-image-2">
+        </div>
+        <div class="item">
+            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544117/5_hcetoi.png" width="100%" alt="banner-image-3">
+        </div>
+        <div class="item">
+            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544115/3_gpotyv.png" width="100%" alt="banner-image-4">
+        </div>
+    </div>
 </section>
-
-<!--<section class="banner-section">-->
-<!--    <div class="banner-carousel laptop-view owl-carousel owl-theme">-->
-<!--        <div class="item">-->
-<!--            <img src="./assets/images/banner-laptop.jpg" width="100%" alt="banner-image">-->
-<!--        </div>-->
-
-<!--    </div>-->
-
-<!--    <div class="banner-carousel mobile-view owl-carousel owl-theme">-->
-<!--        <div class="item">-->
-<!--            <img src="./assets/images/banner-mobile.jpg" width="100%" alt="banner-image">-->
-<!--        </div>-->
-
-<!--    </div>-->
-
-<!--</section>-->
-<!--  end banner  -->
 <!-- about section start -->
 
-<div class="container py-2 py-lg-5">
-    <div class="row py-4">
-        <div class="col-md-8 mt-5 pt-lg-5">
-            <h3 class="section animate-on-scroll slide-right">About Champion Cricket League</h3>
-            <p class="section animate-on-scroll slide-left">Welcome to Champion Cricket League, where passion meets
-                excellence! Established with the mission
+<div class="container py-2">
+    <div class="row align-items-center">
+        <div class="col-md-8 text-black">
+            <h3 class="animate-on-scroll slide-right">About Champion Cricket League</h3>
+            <p class="animate-on-scroll slide-left">
+                Welcome to Champion Cricket League, where passion meets excellence! Established with the mission
                 to nurture and develop the next generation of cricket stars, our academy is committed to providing a
-                professional and enriching environment for young, aspiring cricketers.</p>
-            <p class="section animate-on-scroll slide-left">
+                professional and enriching environment for young, aspiring cricketers.
+            </p>
+            <p class="animate-on-scroll slide-left">
                 At Champion Cricket League, we believe that every budding talent deserves the opportunity to
                 unlock their full potential. Our state-of-the-art facilities, combined with expert coaching from
                 experienced professionals, ensure that players not only learn the fundamentals of the game but also
                 develop the skills needed to excel at higher levels.
             </p>
-            <a class="section animate-on-scroll slide-right" href="about.php">Know More <i
-                    class="fa-solid fa-angle-right"></i>
-                <i class="fa-solid fa-angle-right"></i></a>
+            <a class="animate-on-scroll slide-right text-black" href="about.php">
+                Know More <i class="fa-solid fa-angle-right"></i>
+                <i class="fa-solid fa-angle-right"></i>
+            </a>
         </div>
-        <div class="col-md-4 py-3">
+        <div class="col-md-4">
             <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760028219/6d0a2ed1-d067-4fb4-8053-5cc92578186b_ev2yy0.jpg" class="w-100 about-image" alt="about-image">
         </div>
     </div>
-
 </div>
 
 <!-- about section end -->

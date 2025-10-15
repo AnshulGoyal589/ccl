@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Champion Cricket League </title>
 
-    <link rel="icon" href="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969681/logo_gnmwyi.jpg">
+    <link rel="icon" href="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544651/38e0ef61-bc38-4686-9644-15c8ad7316a3_p9kes0.jpg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/style.css">
@@ -27,9 +27,9 @@
 <body>
 
     <div class="fixed-icon">
-        <a href="https://wa.me/917827434237"><img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969822/whatsapp_uv1xwy.jpg" alt="icon"></a>
+        <a href="https://wa.me/917827434237"><img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760543667/1022px-WhatsApp.svg_f6mt0v.png" alt="icon"></a>
         <br>
-        <a href="tel:01169311383"><img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969764/phone_kdceke.png" alt="icon"></a>
+        <a href="tel:01169311383"><img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760543704/0be285c89368fd2d7b0499db071963ef_hyxled.svg" alt="icon"></a>
     </div>
     
     <!-- Navbar -->
@@ -56,7 +56,8 @@
                 </div>
 
                 <div class="col-lg-8 col-md-8 col-sm-12 d-flex align-items-center  gap-3 py-2 " id="mobile-none">
-                    <span class="ms-3">Last Date to Register: 6th September 2025 | Fees Increasing Soon - Register Now</span>
+                    <!-- <span class="ms-3">Last Date to Register: 6th September 2025 | Fees Increasing Soon - Register Now</span> -->
+                    <span class="ms-3">Registrations Open | Fees Increasing Soon - Register Now</span>
                 </div>
                 <!-- Language Selector and Register Button -->
                 <div class="col-lg-1 col-md-2 col-sm-12 col-4 user-section gap-3">
@@ -73,7 +74,7 @@
     <nav class="navbar  navbar-expand-lg navbar-black bg-black" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.php">
-                <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969681/logo_gnmwyi.jpg" alt="Logo" class="logo me-2">
+                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544651/38e0ef61-bc38-4686-9644-15c8ad7316a3_p9kes0.jpg" alt="Logo" class="logo me-2">
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

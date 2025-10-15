@@ -56,7 +56,7 @@
         <div class="loging-form">
             <form>
                 <div class="text-center">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969681/logo_gnmwyi.jpg" class="w-50" alt="logo">
+                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544651/38e0ef61-bc38-4686-9644-15c8ad7316a3_p9kes0.jpg" class="w-50" alt="logo">
                     <h4>Champion Cricket League</h4>
                     <p>Please log in to your account</p>
                 </div>
