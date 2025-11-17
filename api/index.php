@@ -291,6 +291,245 @@
                 </div>
             </div>
 
+            <!-- 13th October Match Trials -->
+            <div class="row">
+                <div class="col-md-12 mt-5 text-black text-center py-4">
+                     <h1>13th October Match Trials</h1>
+                     <div class="dots text-center">
+                         <div class="dot1"> </div>
+                         <div class="dot1"></div>
+                         <div class="dot1"></div>
+                         <div class="dot2"></div>
+                     </div>
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="simple-gallery-wrapper d-flex align-items-center justify-content-center" style="gap:12px;">
+                        <button class="sg-btn prev" aria-label="Previous" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9664;</button>
+                        <div id="simple-gallery" class="simple-gallery" style="display:flex;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;gap:16px;padding:8px 4px;width:100%;">
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(4)/_DSC4879.jpg" alt="Slider Image 1" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(4)/_DSC5161.jpg" alt="Slider Image 2" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(4)/_DSC4773%20(1).jpg" alt="Slider Image 3" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(4)/_DSC4750.jpg" alt="Slider Image 4" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(4)/_DSC4751.jpg" alt="Slider Image 5" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(4)/_DSC4773.jpg" alt="Slider Image 6" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                        </div>
+                        <button class="sg-btn next" aria-label="Next" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9654;</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 14th October Match Trials -->
+             <div class="row">
+                <div class="col-md-12 mt-5 text-black text-center py-4">
+                     <h1>14th October Match Trials</h1>
+                     <div class="dots text-center">
+                         <div class="dot1"> </div>
+                         <div class="dot1"></div>
+                         <div class="dot1"></div>
+                         <div class="dot2"></div>
+                     </div>
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="simple-gallery-wrapper d-flex align-items-center justify-content-center" style="gap:12px;">
+                        <button class="sg-btn prev" aria-label="Previous" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9664;</button>
+                        <div id="simple-gallery" class="simple-gallery" style="display:flex;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;gap:16px;padding:8px 4px;width:100%;">
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(3)/_DSC5211.jpg" alt="Slider Image 1" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(3)/_DSC5161.jpg" alt="Slider Image 2" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(3)/_DSC5099.jpg" alt="Slider Image 3" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(3)/_DSC5101.jpg" alt="Slider Image 4" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(3)/_DSC5140.jpg" alt="Slider Image 5" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                        </div>
+                        <button class="sg-btn next" aria-label="Next" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9654;</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 15th October Match Trials -->
+            <div class="row">
+                <div class="col-md-12 mt-5 text-black text-center py-4">
+                     <h1>15th October Match Trials</h1>
+                     <div class="dots text-center">
+                         <div class="dot1"> </div>
+                         <div class="dot1"></div>
+                         <div class="dot1"></div>
+                         <div class="dot2"></div>
+                     </div>
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="simple-gallery-wrapper d-flex align-items-center justify-content-center" style="gap:12px;">
+                        <button class="sg-btn prev" aria-label="Previous" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9664;</button>
+                        <div id="simple-gallery" class="simple-gallery" style="display:flex;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;gap:16px;padding:8px 4px;width:100%;">
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(2)/_DSC5461.jpg" alt="Slider Image 1" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(2)/_DSC5804.jpg" alt="Slider Image 2" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(2)/_DSC5453.jpg" alt="Slider Image 3" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(2)/_DSC5491.jpg" alt="Slider Image 4" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(2)/_DSC5457.jpg" alt="Slider Image 5" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized%20(2)/_DSC5414.jpg" alt="Slider Image 6" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                        </div>
+                        <button class="sg-btn next" aria-label="Next" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9654;</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- 16th October Match Trials -->
+            <div class="row">
+                <div class="col-md-12 mt-5 text-black text-center py-4">
+                     <h1>16th October Match Trials</h1>
+                     <div class="dots text-center">
+                         <div class="dot1"> </div>
+                         <div class="dot1"></div>
+                         <div class="dot1"></div>
+                         <div class="dot2"></div>
+                     </div>
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="simple-gallery-wrapper d-flex align-items-center justify-content-center" style="gap:12px;">
+                        <button class="sg-btn prev" aria-label="Previous" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9664;</button>
+                        <div id="simple-gallery" class="simple-gallery" style="display:flex;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;gap:16px;padding:8px 4px;width:100%;">
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/_DSC5880.jpg" alt="Slider Image 1" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/_DSC5944.jpg" alt="Slider Image 2" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/_DSC5876.jpg" alt="Slider Image 3" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/_DSC5871%20(1).jpg" alt="Slider Image 4" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/_DSC5873.jpg" alt="Slider Image 5" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/DJI_20250605072311_0039_D.jpg" alt="Slider Image 6" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                        </div>
+                        <button class="sg-btn next" aria-label="Next" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9654;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 17th October Match Trials -->
+            <div class="row">
+                <div class="col-md-12 mt-5 text-black text-center py-4">
+                     <h1>17th October Match Trials</h1>
+                     <div class="dots text-center">
+                         <div class="dot1"> </div>
+                         <div class="dot1"></div>
+                         <div class="dot1"></div>
+                         <div class="dot2"></div>
+                     </div>
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="simple-gallery-wrapper d-flex align-items-center justify-content-center" style="gap:12px;">
+                        <button class="sg-btn prev" aria-label="Previous" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9664;</button>
+                        <div id="simple-gallery" class="simple-gallery" style="display:flex;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;gap:16px;padding:8px 4px;width:100%;">
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized/_DSC6303.jpg" alt="Slider Image 1" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized/_DSC6304.jpg" alt="Slider Image 2" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized/_DSC6308.jpg" alt="Slider Image 3" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized/_DSC6309.jpg" alt="Slider Image 4" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized/_DSC6238%20(1).jpg" alt="Slider Image 5" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                            <div class="sg-item" style="flex:0 0 auto;width:320px;">
+                                <img class="img-fluid" src="https://ik.imagekit.io/fbe2nexmj/iloveimg-resized/_DSC6239.jpg" alt="Slider Image 6" style="width:100%;height:auto;border-radius:6px;">
+                            </div>
+                        </div>
+                        <button class="sg-btn next" aria-label="Next" style="background:#000;color:#fff;border:none;padding:8px 12px;cursor:pointer;">&#9654;</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                // Simple horizontal scrolling gallery (no external carousel dependency)
+                document.addEventListener('DOMContentLoaded', function () {
+                    const gallery = document.getElementById('simple-gallery');
+                    const prevBtn = document.querySelector('.sg-btn.prev');
+                    const nextBtn = document.querySelector('.sg-btn.next');
+
+                    function getScrollAmount() {
+                        // scroll by ~80% of visible width or fallback
+                        return Math.floor(gallery.clientWidth * 0.8) || 400;
+                    }
+
+                    prevBtn.addEventListener('click', function () {
+                        gallery.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+                    });
+
+                    nextBtn.addEventListener('click', function () {
+                        gallery.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+                    });
+
+                    // Make keyboard accessible
+                    gallery.addEventListener('keydown', function (e) {
+                        if (e.key === 'ArrowLeft') gallery.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+                        if (e.key === 'ArrowRight') gallery.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+                    });
+                });
+            </script>
+
         </div>
 
     </div>
@@ -396,7 +635,7 @@
 
 
 <!-- start faq section -->
-<section class="faq-section">
+<!-- <section class="faq-section">
     <div class="container">
         <div class="row mt-3">
             <div class="col-md-6 ">
@@ -404,7 +643,6 @@
                     <source src="https://res.cloudinary.com/dxk6wjttq/video/upload/v1753967837/faq_rbkhz7.mp4"  type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <!--<img src="./assets/images/faq.mp4" class="w-100 mt-5" alt="faq-image">-->
             </div>
             <div class="col-md-6 py-4">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -502,7 +740,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- end faq section -->
 
 
@@ -513,8 +751,8 @@
 
 <!-- start advantages section -->
 
-<section class="advantages-section selection-process text-black py-5">
-    <div class="container py-5">
+<section class="advantages-section selection-process text-black pb-5">
+    <div class="container pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 ">
