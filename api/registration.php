@@ -1,77 +1,23 @@
 <?php include 'header.php'; ?>
 
 <body>
-    <!-- Add CSS for the popup -->
+    <!-- The QR code popup and button can be removed as they are no longer needed -->
     <style>
-        .popup-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .popup-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            max-width: 90%;
-            max-height: 90%;
-            text-align: center;
-        }
-        
-        .popup-content img {
-            max-width: 100%;
-            max-height: 60vh;
-            object-fit: contain;
-        }
-        
-        .close-popup {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 30px;
-            color: white;
-            cursor: pointer;
-        }
-        
-        /* Responsive styles */
+        /* Keep your responsive styles, but the popup styles are now optional */
         @media (max-width: 768px) {
             .registraion-form-section .container {
                 padding: 10px;
             }
-            
-            .popup-content {
-                padding: 15px;
-                width: 95%;
-            }
-            
             .col-md-4.mt-4 {
                 margin-top: 20px;
                 text-align: center;
             }
-            
             .col-md-4.mt-4 img {
                 max-width: 250px;
                 margin: 0 auto;
             }
         }
     </style>
-
-    <!-- Popup HTML -->
-    <div id="imagePopup" class="popup-overlay">
-        <span class="close-popup">&times;</span>
-        <div class="popup-content">
-            <h4>Payment QR Code</h4>
-            <img height="250" width="250" src="https://res.cloudinary.com/db1szsk6y/image/upload/v1756139103/qr_fx5kov.jpg" alt="QR Code">
-            <p>Please scan this QR code to complete your payment.</p>
-        </div>
-    </div>
 
     <section class="registraion-form-section">
         <div class="container py-5">
@@ -84,7 +30,8 @@
                         <h6 class="text-center mb-4">ALL FIELDS IN THE FORM ARE MANDATORY</h6>
                     </div>
                     
-                    <form id="registration-form" action="reg-submit.php" method="POST">
+                    <!-- We will handle submission with JavaScript, so the action attribute is not strictly needed -->
+                    <form id="registration-form" method="POST">
                         <!-- Name Field -->
                         <div class="mb-3">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
@@ -93,11 +40,10 @@
                         <!-- Age and Mobile Fields --> 
                         <div class="row mb-3">
                             <div class="col">
-                                <input type="number" name="age" class="form-control" id="age" placeholder="Your age" min="1"
-                                    required>
+                                <input type="number" name="age" class="form-control" id="age" placeholder="Your age" min="1" required>
                             </div>
                             <div class="col">
-                                <input type="tel" name="phone" class="form-control" id="mobile" placeholder="Mobile no." required>
+                                <input type="tel" name="phone" class="form-control" id="phone" placeholder="Mobile no." required pattern="[6-9]{1}[0-9]{9}">
                             </div>
                         </div>
 
@@ -110,7 +56,7 @@
                         <div class="mb-3">
                             <select class="form-select" name="speciality" id="speciality" required>
                                 <option value="" disabled selected>Select your specialty</option>
-                                <option value="Bowler"> Bowler</option>
+                                <option value="Bowler">Bowler</option>
                                 <option value="Batsman">Batsman</option>
                                 <option value="Wicketkeeper">Wicketkeeper/Batsman</option>
                                 <option value="All Rounder">All Rounder</option>
@@ -163,11 +109,6 @@
                                 <input type="text" name="city" class="form-control" id="city" placeholder="City" required>
                             </div>
                         </div>
-
-                        <!-- Payment button to show QR code -->
-                        <div class="mb-3">
-                            <button type="button" id="scan-qr-btn" class="btn btn-primary w-100">Scan QR Code to Make Payment</button>
-                        </div>
                         
                         <!-- Referral Code Field -->
                         <div class="mb-3">
@@ -181,8 +122,8 @@
                             <label class="form-check-label" for="exampleCheck1"><a href="terms-conditions.php" class="text-black" >Terms & Conditions</a></label>
                         </div>
 
-                        <!-- Submit Button -->
-                        <button type="submit" id="submit-btn" class="btn btn-danger w-100">Submit</button>
+                        <!-- Submit Button now triggers payment -->
+                        <button type="submit" id="submit-btn" class="btn btn-danger w-100">Proceed to Payment</button>
                     </form>
                 </div>
                 <div class="col-md-4">
@@ -190,82 +131,127 @@
                         <h3 class="mb-3">Trial Registration Fees</h3>
                         <table class="table table-bordered">
                             <thead>
-                                <tr>
-                                    <th>PLAYER</th>
-                                    <th>BASIC FEES</th>
-                                    <th>GST</th>
-                                    <th>TOTAL</th>
-                                </tr>
+                                <tr><th>PLAYER</th><th>BASIC FEES</th><th>GST</th><th>TOTAL</th></tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Batsman</td>
-                                    <td>₹999/-</td>
-                                    <td>₹179/-</td>
-                                    <td>₹1179/-</td>
-                                </tr>
-                                <tr>
-                                    <td>Bowler</td>
-                                    <td>₹999/-</td>
-                                    <td>₹179/-</td>
-                                    <td>₹1179/-</td>
-                                </tr>
-                                <tr>
-                                    <td>All Rounder</td>
-                                    <td>₹1299/-</td>
-                                    <td>₹234/-</td>
-                                    <td>₹1533/-</td>
-                                </tr>
-                                <tr>
-                                    <td>Wicket Keeper + Batsman</td>
-                                    <td>₹1299/-</td>
-                                    <td>₹234/-</td>
-                                    <td>₹1533/-</td>
-                                </tr>
+                                <tr><td>Batsman</td><td>₹999/-</td><td>₹179/-</td><td>₹1179/-</td></tr>
+                                <tr><td>Bowler</td><td>₹999/-</td><td>₹179/-</td><td>₹1179/-</td></tr>
+                                <tr><td>All Rounder</td><td>₹1299/-</td><td>₹234/-</td><td>₹1533/-</td></tr>
+                                <tr><td>Wicket Keeper + Batsman</td><td>₹1299/-</td><td>₹234/-</td><td>₹1533/-</td></tr>
                             </tbody>
                         </table>
-                        <!-- <div class="mt-3 mb-3">
-                            <strong>STEPS TO REGISTER</strong>
-                        </div>
-                        <div class="text-end">
-                            <img src="./assets/images/idfc-bank.png" alt="IDFC FIRST Bank" height="50">
-                        </div> -->
                     </div>
                     <div class="text-center mt-3">
-                        <img src="https://res.cloudinary.com/db1szsk6y/image/upload/v1756139103/qr_fx5kov.jpg" alt="QR Code" height="250" width="250">
+                        <!-- You can keep a static QR code for other purposes, or remove it -->
+                        <img src="https://res.cloudinary.com/db1szsk6y/image/upload/v1756139103/qr_fx5kov.jpg" alt="Info QR Code" height="250" width="250">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- JavaScript for handling the popup -->
+    <!-- Razorpay Checkout Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get the elements
-            const submitBtn = document.getElementById('submit-btn');
-            const scanQrBtn = document.getElementById('scan-qr-btn');
-            const popup = document.getElementById('imagePopup');
-            const closeBtn = document.querySelector('.close-popup');
-            const form = document.getElementById('registration-form');
-            
-            // Show popup when "Scan QR Code" button is clicked
-            scanQrBtn.addEventListener('click', function() {
-                popup.style.display = 'flex'; // Show popup
-            });
-            
-            // Close popup when X is clicked
-            closeBtn.addEventListener('click', function() {
-                popup.style.display = 'none';
-            });
-            
-            // Close popup if user clicks outside content
-            popup.addEventListener('click', function(e) {
-                if (e.target === popup) {
-                    popup.style.display = 'none';
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('registration-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Simple client-side validation
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Processing...';
+
+            const formData = new FormData(form);
+
+            // 1. Create Order via AJAX
+            fetch('create-order.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Proceed to Payment';
+                    return;
                 }
+
+                // 2. Open Razorpay Checkout
+                const options = {
+                    "key": data.razorpay_key,
+                    "amount": data.amount,
+                    "currency": data.currency,
+                    "name": data.name,
+                    "description": data.description,
+                    "order_id": data.order_id,
+                    "handler": function (response) {
+                        // 3. On successful payment, verify it on the server
+                        // Create a new hidden form to post payment details and original form data
+                        const verificationForm = document.createElement('form');
+                        verificationForm.method = 'POST';
+                        verificationForm.action = 'verify-payment.php';
+
+                        // Add Razorpay response fields
+                        for (const key in response) {
+                            const input = document.createElement('input');
+                            input.type = 'hidden';
+                            input.name = key;
+                            input.value = response[key];
+                            verificationForm.appendChild(input);
+                        }
+
+                        // Add original form data fields
+                        formData.forEach((value, key) => {
+                            const input = document.createElement('input');
+                            input.type = 'hidden';
+                            input.name = key;
+                            input.value = value;
+                            verificationForm.appendChild(input);
+                        });
+                        
+                        document.body.appendChild(verificationForm);
+                        verificationForm.submit();
+                    },
+                    "prefill": {
+                        "name": data.prefill.name,
+                        "email": data.prefill.email,
+                        "contact": data.prefill.contact
+                    },
+                    "theme": {
+                        "color": "#F37254"
+                    },
+                    "modal": {
+                        "ondismiss": function() {
+                            // Re-enable button if user closes the modal without paying
+                            alert('Payment was cancelled.');
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = 'Proceed to Payment';
+                        }
+                    }
+                };
+
+                const rzp = new Razorpay(options);
+                rzp.open();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Proceed to Payment';
             });
         });
+    });
     </script>
 
     <?php include 'footer.php'; ?>
+</body>
