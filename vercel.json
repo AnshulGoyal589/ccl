@@ -8,6 +8,8 @@
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
 
     { "src": "/about.php", "dest": "/api/about.php" },
+    { "src": "/create-order.php", "dest": "/api/create-order.php" },
+    { "src": "/create-order2.php", "dest": "/api/create-order2.php" },
     { "src": "/contact-submit.php", "dest": "/api/contact-submit.php" },
     { "src": "/contact.php", "dest": "/api/contact.php" },
     { "src": "/default.php", "dest": "/api/default.php" },
