@@ -107,7 +107,7 @@ We shape the future of cricket's great name!
         <div class="text-center pt-4 pb-2">
             <hr class="text-white">
             <p>Copyright © 2024 | All Rights Reserved | Champion Cricket League</p>
-             <p>GST No: <strong>07ALFPY8018A1Z3</strong></p>
+             <!-- <p>GST No: <strong>07ALFPY8018A1Z3</strong></p> -->
             <a href="privacy-policy.php" class="text-white">Privacy Policy</a> |
             <a href="terms-conditions.php" class="text-white">Terms & Conditions</a>
             <br>Powered by khel Bharat
