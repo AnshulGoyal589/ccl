@@ -26,11 +26,11 @@ $amount = 0;
 switch ($speciality) {
     case 'Batsman':
     case 'Bowler':
-        $amount = 825;
+        $amount = 1199;
         break;
     case 'All Rounder':
     case 'Wicketkeeper':
-        $amount = 1179;
+        $amount = 1499;
         break;
     default:
         http_response_code(400);

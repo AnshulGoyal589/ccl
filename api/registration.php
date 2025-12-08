@@ -131,13 +131,13 @@
                         <h3 class="mb-3">Trial Registration Fees</h3>
                         <table class="table table-bordered">
                             <thead>
-                                <tr><th>PLAYER</th><th>BASIC FEES</th><th>GST</th><th>TOTAL</th></tr>
+                                <tr><th>PLAYER</th><th>TOTAL FEES</th></tr>
                             </thead>
                             <tbody>
-                                <tr><td>Batsman</td><td>₹999/-</td><td>₹179/-</td><td>₹1179/-</td></tr>
-                                <tr><td>Bowler</td><td>₹999/-</td><td>₹179/-</td><td>₹1179/-</td></tr>
-                                <tr><td>All Rounder</td><td>₹1299/-</td><td>₹234/-</td><td>₹1533/-</td></tr>
-                                <tr><td>Wicket Keeper + Batsman</td><td>₹1299/-</td><td>₹234/-</td><td>₹1533/-</td></tr>
+                                <tr><td>Batsman</td><td>₹799/-</td></tr>
+                                <tr><td>Bowler</td><td>₹799/-</td></tr>
+                                <tr><td>All Rounder</td><td>₹1199/-</td></tr>
+                                <tr><td>Wicket Keeper + Batsman</td><td>₹1199/-</td></tr>
                             </tbody>
                         </table>
                     </div>

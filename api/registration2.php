@@ -129,8 +129,8 @@
                     <div class="pricing-box p-4 text-center bg-light rounded shadow-sm mt-5">
                         <h3 class="mb-3">Cost Categories</h3>
                         <ul class="list-unstyled">
-                            <li class="mb-3"><strong>Batsman/Bowler:</strong> ₹699 + GST</li>
-                            <li class="mb-3"><strong>All Rounder/Wicket Keeper:</strong> ₹999 + GST</li>
+                            <li class="mb-3"><strong>Batsman/Bowler:</strong> 1199</li>
+                            <li class="mb-3"><strong>All Rounder/Wicket Keeper:</strong> 1499</li>
                         </ul>
                     </div>
                     <!-- The static QR code image has been removed as payment is handled by Razorpay -->

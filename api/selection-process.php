@@ -58,8 +58,7 @@
                 <div class="selection-processes h-100">
                     <h2 class="py-2 text-center">Step 1: Registration</h2>
                     <ul>
-                        <li><b>Registration Fee : </b> <b>INR 999</b> (+ GST) for regular players; INR 1299 +
-                            GST for all-rounders.</li>
+                        <li><b>Registration Fee : </b> <b>INR 999</b> for regular players; INR 1199 for all-rounders.</li>
 
                         <li>States Covered: Delhi NCR, Uttar Pradesh, Rajasthan,
                             Punjab, Madhya Pradesh, Uttarakhand, Gujrat, Himachal Pradesh,
@@ -114,10 +113,10 @@
                     <h2 class="text-center">Step 2: Match Registration</h2>
                     <ul>
                        
-                        <li><b>U16 Match Fees </b>: INR 4999 (+ GST).</li>
+                        <li><b>U16 Match Fees </b>: INR 4999.</li>
                         <li><b>U16 Match Format  : </b>Two 25-25 over matches per
                             participant</li>
-                             <li><b>Open League Fees </b>: INR 5999 (+ GST).</li>
+                             <li><b>Open League Fees </b>: INR 5999.</li>
                               <li><b>Open League Match Format  : </b>Two 20-20 over matches per
                             participant</li>
                         <li><b>Location : </b>Matches held at Delhi NCR or
