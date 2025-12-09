@@ -134,10 +134,10 @@
                                 <tr><th>PLAYER</th><th>TOTAL FEES</th></tr>
                             </thead>
                             <tbody>
-                                <tr><td>Batsman</td><td>₹799/-</td></tr>
-                                <tr><td>Bowler</td><td>₹799/-</td></tr>
-                                <tr><td>All Rounder</td><td>₹1199/-</td></tr>
-                                <tr><td>Wicket Keeper + Batsman</td><td>₹1199/-</td></tr>
+                                <tr><td>Batsman</td><td>₹1199/-</td></tr>
+                                <tr><td>Bowler</td><td>₹1199/-</td></tr>
+                                <tr><td>All Rounder</td><td>₹1499/-</td></tr>
+                                <tr><td>Wicket Keeper + Batsman</td><td>₹1499/-</td></tr>
                             </tbody>
                         </table>
                     </div>

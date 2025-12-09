@@ -126,12 +126,19 @@
                     </form>
                 </div>
                 <div class="col-md-4">
-                    <div class="pricing-box p-4 text-center bg-light rounded shadow-sm mt-5">
-                        <h3 class="mb-3">Cost Categories</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-3"><strong>Batsman/Bowler:</strong> 1199</li>
-                            <li class="mb-3"><strong>All Rounder/Wicket Keeper:</strong> 1499</li>
-                        </ul>
+                    <div class="pricing-box p-4 text-center bg-light rounded shadow-sm">
+                        <h3 class="mb-3">Trial Registration Fees</h3>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr><th>PLAYER</th><th>TOTAL FEES</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Batsman</td><td>₹799/-</td></tr>
+                                <tr><td>Bowler</td><td>₹799/-</td></tr>
+                                <tr><td>All Rounder</td><td>₹1199/-</td></tr>
+                                <tr><td>Wicket Keeper + Batsman</td><td>₹1199/-</td></tr>
+                            </tbody>
+                        </table>
                     </div>
                     <!-- The static QR code image has been removed as payment is handled by Razorpay -->
                 </div>
