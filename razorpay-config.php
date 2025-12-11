@@ -8,9 +8,13 @@ if (session_status() === PHP_SESSION_NONE) {
 
 require __DIR__ . '/vendor/autoload.php';
 
-// Replace with your actual Razorpay Key ID and Key Secret
-const KEY_ID = 'rzp_live_Rjr4iKbNEyNeiv';
-const KEY_SECRET = '01u4qsoauqc6D1aEiklOf4M6';
+# Production
+// const KEY_ID = 'rzp_live_Rjr4iKbNEyNeiv';
+// const KEY_SECRET = '01u4qsoauqc6D1aEiklOf4M6';
+
+# Testing
+const KEY_ID = 'rzp_test_FvWVeiMWly74xf';
+const KEY_SECRET = 'dIlnytsaZhi575INukrM5MNo';
 
 // Error reporting for development
 ini_set('display_errors', 1);

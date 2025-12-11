@@ -30,7 +30,7 @@
                         <h6 class="text-center mb-4">ALL FIELDS IN THE FORM ARE MANDATORY</h6>
                     </div>
                     
-                    <!-- We will handle submission with JavaScript, so the action attribute is not strictly needed -->
+                    <!-- Your complete HTML form remains exactly the same -->
                     <form id="registration-form" method="POST">
                         <!-- Name Field -->
                         <div class="mb-3">
@@ -142,7 +142,6 @@
                         </table>
                     </div>
                     <div class="text-center mt-3">
-                        <!-- You can keep a static QR code for other purposes, or remove it -->
                         <img src="https://res.cloudinary.com/db1szsk6y/image/upload/v1756139103/qr_fx5kov.jpg" alt="Info QR Code" height="250" width="250">
                     </div>
                 </div>
@@ -161,7 +160,6 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault(); // Prevent default form submission
 
-            // Simple client-side validation
             if (!form.checkValidity()) {
                 form.reportValidity();
                 return;
@@ -172,8 +170,7 @@
 
             const formData = new FormData(form);
 
-            // 1. Create Order via AJAX
-            fetch('create-order.php', {
+            fetch('process-registration.php', {
                 method: 'POST',
                 body: formData
             })
@@ -195,32 +192,9 @@
                     "description": data.description,
                     "order_id": data.order_id,
                     "handler": function (response) {
-                        // 3. On successful payment, verify it on the server
-                        // Create a new hidden form to post payment details and original form data
-                        const verificationForm = document.createElement('form');
-                        verificationForm.method = 'POST';
-                        verificationForm.action = 'verify-payment.php';
-
-                        // Add Razorpay response fields
-                        for (const key in response) {
-                            const input = document.createElement('input');
-                            input.type = 'hidden';
-                            input.name = key;
-                            input.value = response[key];
-                            verificationForm.appendChild(input);
-                        }
-
-                        // Add original form data fields
-                        formData.forEach((value, key) => {
-                            const input = document.createElement('input');
-                            input.type = 'hidden';
-                            input.name = key;
-                            input.value = value;
-                            verificationForm.appendChild(input);
-                        });
+                        alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+                        window.location.href = "thank-you.php?payment_id=" + response.razorpay_payment_id + "&order_id=" + response.razorpay_order_id;
                         
-                        document.body.appendChild(verificationForm);
-                        verificationForm.submit();
                     },
                     "prefill": {
                         "name": data.prefill.name,
@@ -232,8 +206,7 @@
                     },
                     "modal": {
                         "ondismiss": function() {
-                            // Re-enable button if user closes the modal without paying
-                            alert('Payment was cancelled.');
+                            alert('Payment was cancelled. Your registration is incomplete.');
                             submitBtn.disabled = false;
                             submitBtn.textContent = 'Proceed to Payment';
                         }

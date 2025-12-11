@@ -170,7 +170,7 @@
 
             // 1. Create Order via AJAX
             // Make sure create-order.php uses the new pricing (699/999)
-            fetch('create-order2.php', {
+            fetch('process-registration.php', {
                 method: 'POST',
                 body: formData
             })
@@ -192,31 +192,9 @@
                     "description": data.description,
                     "order_id": data.order_id,
                     "handler": function (response) {
-                        // 3. On successful payment, verify it on the server
-                        const verificationForm = document.createElement('form');
-                        verificationForm.method = 'POST';
-                        verificationForm.action = 'verify-payment.php';
-
-                        // Add Razorpay response fields
-                        for (const key in response) {
-                            const input = document.createElement('input');
-                            input.type = 'hidden';
-                            input.name = key;
-                            input.value = response[key];
-                            verificationForm.appendChild(input);
-                        }
-
-                        // Add original form data fields
-                        formData.forEach((value, key) => {
-                            const input = document.createElement('input');
-                            input.type = 'hidden';
-                            input.name = key;
-                            input.value = value;
-                            verificationForm.appendChild(input);
-                        });
+                        alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+                        window.location.href = "thank-you.php?payment_id=" + response.razorpay_payment_id + "&order_id=" + response.razorpay_order_id;
                         
-                        document.body.appendChild(verificationForm);
-                        verificationForm.submit();
                     },
                     "prefill": {
                         "name": data.prefill.name,

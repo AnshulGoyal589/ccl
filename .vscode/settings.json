@@ -1,0 +1,18 @@
+{
+  "restoreTerminals.runOnStartup": true,
+  "restoreTerminals.terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "PhP Server",
+          "cwd": "${workspaceFolder}",
+          "icon": "zap",
+          "color": "cyan",
+          "commands": [
+            "php -S localhost:8000"
+          ]
+        }
+      ]
+    }
+  ]
+}

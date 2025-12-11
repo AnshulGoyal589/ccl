@@ -1,17 +1,7 @@
 <?php
-// api/create-order.php (FINAL CLEAN VERSION)
 
-// Use the Composer autoloader
 require __DIR__ . '/../vendor/autoload.php';
 include __DIR__ . '/../razorpay-config.php';
-
-// A quick check to ensure the $api object from razorpay-config.php was created.
-if (!isset($api)) {
-    http_response_code(500);
-    header('Content-Type: application/json');
-    echo json_encode(['error' => 'Razorpay API client failed to initialize.']);
-    exit;
-}
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST' || empty($_POST['speciality'])) {
     http_response_code(400);
