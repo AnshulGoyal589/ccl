@@ -38,6 +38,7 @@
     { "src": "/terms-conditions.php", "dest": "/api/terms-conditions.php" },
     { "src": "/trials.php", "dest": "/api/trials.php" },
     { "src": "/videos.php", "dest": "/api/videos.php" },
+    { "src": "/process-registration.php", "dest": "/api/process-registration.php" },
 
     { "src": "/(.*)", "dest": "/api/index.php" }
   ]
