@@ -98,11 +98,11 @@ try {
     switch ($speciality) {
         case 'Batsman':
         case 'Bowler':
-            $amount_in_inr = 1199;
+            $amount_in_inr = 799;
             break;
         case 'All Rounder':
         case 'Wicketkeeper':
-            $amount_in_inr = 1499;
+            $amount_in_inr = 1199;
             break;
         default:
             throw new Exception('Invalid specialty selected.');

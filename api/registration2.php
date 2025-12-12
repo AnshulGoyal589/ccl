@@ -170,7 +170,7 @@
 
             // 1. Create Order via AJAX
             // Make sure create-order.php uses the new pricing (699/999)
-            fetch('process-registration.php', {
+            fetch('process-registration2.php', {
                 method: 'POST',
                 body: formData
             })
