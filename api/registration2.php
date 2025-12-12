@@ -29,7 +29,6 @@
                         <h6 class="text-center mb-4">ALL FIELDS IN THE FORM ARE MANDATORY</h6>
                     </div>
                     
-                    <!-- Form submission is now handled by JavaScript to trigger Razorpay -->
                     <form id="registration-form" method="POST">
                         <!-- Name Field -->
                         <div class="mb-3">
@@ -121,8 +120,8 @@
                             <label class="form-check-label" for="exampleCheck1"><a href="terms-conditions.php" class="text-black" >Terms & Conditions</a></label>
                         </div>
 
-                        <!-- Submit Button now triggers payment -->
-                        <button type="submit" id="submit-btn" class="btn btn-danger w-100">Proceed to Payment</button>
+                        <!-- UPDATED: Button text changed for clarity -->
+                        <button type="submit" id="submit-btn" class="btn btn-danger w-100">Submit Registration</button>
                     </form>
                 </div>
                 <div class="col-md-4">
@@ -140,36 +139,64 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- The static QR code image has been removed as payment is handled by Razorpay -->
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- NEW: Bootstrap Modal for Payment Confirmation -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Registration Submitted!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you! Your details have been successfully received.</p>
+                    <p>To finalize your spot, please complete the payment.</p>
+                    <h4 class="text-center">Amount to Pay: <strong id="payment-amount"></strong></h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" id="proceed-to-payment-btn" class="btn btn-success">Proceed to Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Razorpay Checkout Script -->
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     
+    <!-- COMPLETELY REVISED SCRIPT -->
     <script>
     document.addEventListener('DOMContentLoaded', function() {
+        // Get references to our elements
         const form = document.getElementById('registration-form');
         const submitBtn = document.getElementById('submit-btn');
+        const paymentModalElement = document.getElementById('paymentModal');
+        const paymentModal = new bootstrap.Modal(paymentModalElement);
+        const proceedToPaymentBtn = document.getElementById('proceed-to-payment-btn');
+        const paymentAmountSpan = document.getElementById('payment-amount');
 
+        // This variable will hold the order details from the server
+        let razorpayOrderData = null;
+
+        // 1. Handle the initial form submission
         form.addEventListener('submit', function(e) {
             e.preventDefault(); // Prevent default form submission
 
-            // Simple client-side validation
             if (!form.checkValidity()) {
                 form.reportValidity();
                 return;
             }
 
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Processing...';
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
 
             const formData = new FormData(form);
 
-            // 1. Create Order via AJAX
-            // Make sure create-order.php uses the new pricing (699/999)
             fetch('process-registration2.php', {
                 method: 'POST',
                 body: formData
@@ -179,53 +206,77 @@
                 if (data.error) {
                     alert(data.error);
                     submitBtn.disabled = false;
-                    submitBtn.textContent = 'Proceed to Payment';
+                    submitBtn.textContent = 'Submit Registration';
                     return;
                 }
 
-                // 2. Open Razorpay Checkout
-                const options = {
-                    "key": data.razorpay_key,
-                    "amount": data.amount,
-                    "currency": data.currency,
-                    "name": data.name,
-                    "description": data.description,
-                    "order_id": data.order_id,
-                    "handler": function (response) {
-                        alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
-                        window.location.href = "thank-you.php?payment_id=" + response.razorpay_payment_id + "&order_id=" + response.razorpay_order_id;
-                        
-                    },
-                    "prefill": {
-                        "name": data.prefill.name,
-                        "email": data.prefill.email,
-                        "contact": data.prefill.contact
-                    },
-                    "theme": {
-                        "color": "#F37254"
-                    },
-                    "modal": {
-                        "ondismiss": function() {
-                            // Re-enable button if user closes the modal without paying
-                            alert('Payment was cancelled.');
-                            submitBtn.disabled = false;
-                            submitBtn.textContent = 'Proceed to Payment';
-                        }
-                    }
-                };
+                // SUCCESS! Store the server response and show our custom modal
+                razorpayOrderData = data; 
+                
+                // Display the amount in the modal (convert paise to rupees)
+                const amountInRupees = data.amount / 100;
+                paymentAmountSpan.textContent = `₹${amountInRupees.toFixed(2)}/-`;
 
-                const rzp = new Razorpay(options);
-                rzp.open();
+                // Show the modal popup
+                paymentModal.show(); 
+
+                // Reset the submit button so user can try again if they cancel
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit Registration';
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('An error occurred. Please try again.');
+                alert('An error occurred during submission. Please try again.');
                 submitBtn.disabled = false;
-                submitBtn.textContent = 'Proceed to Payment';
+                submitBtn.textContent = 'Submit Registration';
             });
+        });
+
+        // 2. Handle the "Proceed to Payment" button click FROM THE MODAL
+        proceedToPaymentBtn.addEventListener('click', function() {
+            if (!razorpayOrderData) {
+                alert('Payment details are missing. Please submit the form again.');
+                return;
+            }
+
+            // Hide our custom modal before opening Razorpay's modal
+            paymentModal.hide(); 
+
+            const options = {
+                "key": razorpayOrderData.razorpay_key,
+                "amount": razorpayOrderData.amount,
+                "currency": razorpayOrderData.currency,
+                "name": razorpayOrderData.name,
+                "description": razorpayOrderData.description,
+                "order_id": razorpayOrderData.order_id,
+                "handler": function (response) {
+                    alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+                    window.location.href = "thank-you.php?payment_id=" + response.razorpay_payment_id + "&order_id=" + response.razorpay_order_id;
+                },
+                "prefill": razorpayOrderData.prefill,
+                "theme": {
+                    "color": "#F37254"
+                },
+                "modal": {
+                    "ondismiss": function() {
+                        alert('Payment was cancelled. Your registration is incomplete. You can click "Proceed to Payment" again from the popup.');
+                        // Optionally, you could re-show your modal here if needed
+                        // paymentModal.show();
+                    }
+                }
+            };
+
+            const rzp = new Razorpay(options);
+            rzp.open();
         });
     });
     </script>
 
     <?php include 'footer.php'; ?>
+    
+    <!-- 
+    IMPORTANT: Make sure Bootstrap's JavaScript is included on your page for the modal to work. 
+    It is usually in footer.php or can be added here.
+    Example: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+    -->
 </body>
