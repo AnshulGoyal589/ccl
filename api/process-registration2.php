@@ -82,16 +82,16 @@ try {
             <tr><td><strong>Date</strong></td><td>' . date('d-M-Y H:i:s') . '</td></tr>
         </table>';
     $mail->AltBody = "Registration Details:\nID: $regId\nName: $name\nAge: $age\nMobile: $phone\nEmail: $email\nSpecialty: $speciality\nState: $state\nCity: $city\nCoupon: $couponCode";
-
+    
     $mail->send();
     
     // Send confirmation to USER
-    $mail->clearAddresses();
-    $mail->clearReplyTos();
-    $mail->addAddress($email, $name);
-    $mail->Subject = 'Your Registration for Champion Cricket League';
-    $mail->Body = "<h3>Hi {$name},</h3><p>Thank you for registering. Your registration ID is: <strong>{$regId}</strong>. Please proceed with the payment to complete the process.</p>";
-    $mail->send();
+    // $mail->clearAddresses();
+    // $mail->clearReplyTos();
+    // $mail->addAddress($email, $name);
+    // $mail->Subject = 'Your Registration for Champion Cricket League';
+    // $mail->Body = "<h3>Hi {$name},</h3><p>Thank you for registering. Your registration ID is: <strong>{$regId}</strong>. Please proceed with the payment to complete the process.</p>";
+    // $mail->send();
 
     // --- 6. Calculate Amount and Create Razorpay Order ---
     $amount_in_inr = 0;

@@ -86,12 +86,12 @@ try {
     $mail->send();
     
     // Send confirmation to USER
-    $mail->clearAddresses();
-    $mail->clearReplyTos();
-    $mail->addAddress($email, $name);
-    $mail->Subject = 'Your Registration for Champion Cricket League';
-    $mail->Body = "<h3>Hi {$name},</h3><p>Thank you for registering. Your registration ID is: <strong>{$regId}</strong>. Please proceed with the payment to complete the process.</p>";
-    $mail->send();
+    // $mail->clearAddresses();
+    // $mail->clearReplyTos();
+    // $mail->addAddress($email, $name);
+    // $mail->Subject = 'Your Registration for Champion Cricket League';
+    // $mail->Body = "<h3>Hi {$name},</h3><p>Thank you for registering. Your registration ID is: <strong>{$regId}</strong>. Please proceed with the payment to complete the process.</p>";
+    // $mail->send();
 
     // --- 6. Calculate Amount and Create Razorpay Order ---
     $amount_in_inr = 0;
