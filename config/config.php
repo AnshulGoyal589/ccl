@@ -5,7 +5,7 @@ return [
         'host'      => 'smtp.gmail.com',
         'port'      => 587,
         'username'  => 'inquirychampioncricketleague@gmail.com',
-        'password'  => 'fbsv ygyl aiqg etkf',
+        'password'  => 'sbcp udzw cidq lmgf',
     ],
 
     'google_sheets' => [

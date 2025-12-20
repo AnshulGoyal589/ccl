@@ -5,51 +5,68 @@ error_reporting(E_ALL);
 ini_set('display_errors', 0);
 ini_set('log_errors', 1);
 
+// --- 1. Initial Setup and Logging ---
+error_log("[PROCESS-REGISTRATION] Script execution started. Request Method: " . $_SERVER['REQUEST_METHOD']);
+
 header('Content-Type: application/json');
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 include __DIR__ . '/../razorpay-config.php';
 
-
 $configFile = dirname(__DIR__) . '/config/config.php';
 if (!file_exists($configFile)) {
+    $errorMsg = "[PROCESS-REGISTRATION] CRITICAL ERROR: Configuration file not found at " . $configFile;
+    error_log($errorMsg);
+    // Use die() here since we can't send a JSON response without configuration for emails etc.
     die('<p style="color: red;">CRITICAL ERROR: Configuration file not found. Please create config.php.</p>');
 }
 $config = require $configFile;
+error_log("[PROCESS-REGISTRATION] Configuration loaded successfully.");
 
 use Razorpay\Api\Api;
+use Razorpay\Api\Errors\Error as RazorpayError;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception as PHPMailerException;
 
+// --- 2. Request Method and Input Validation ---
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
+    error_log("[PROCESS-REGISTRATION] Invalid request method: " . $_SERVER['REQUEST_METHOD']);
     echo json_encode(['error' => 'Method Not Allowed']);
     exit();
 }
 
+error_log("[PROCESS-REGISTRATION] Starting input validation. Received POST data: " . json_encode($_POST));
 $required_fields = ['name', 'age', 'phone', 'email', 'speciality', 'state', 'city'];
 foreach ($required_fields as $field) {
     if (empty($_POST[$field])) {
         http_response_code(400);
-        echo json_encode(['error' => "Field '$field' is required."]);
+        $errorMessage = "Field '$field' is required.";
+        error_log("[PROCESS-REGISTRATION] Validation failed: " . $errorMessage);
+        echo json_encode(['error' => $errorMessage]);
         exit();
     }
 }
+error_log("[PROCESS-REGISTRATION] All required fields are present.");
 
+// --- 3. Sanitize Input Data & Generate ID ---
+$regId = 'CCLREG' . date('YmdHis') . rand(100, 999); // Added random element for uniqueness
+$name = htmlspecialchars(trim($_POST['name']), ENT_QUOTES, 'UTF-8');
+$age = htmlspecialchars(trim($_POST['age']), ENT_QUOTES, 'UTF-8');
+$phone = htmlspecialchars(trim($_POST['phone']), ENT_QUOTES, 'UTF-8');
+$email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+$speciality = htmlspecialchars(trim($_POST['speciality']), ENT_QUOTES, 'UTF-8');
+$state = htmlspecialchars(trim($_POST['state']), ENT_QUOTES, 'UTF-8');
+$city = htmlspecialchars(trim($_POST['city']), ENT_QUOTES, 'UTF-8');
+$couponCode = isset($_POST['c-code']) && trim($_POST['c-code']) !== '' ? htmlspecialchars(trim($_POST['c-code']), ENT_QUOTES, 'UTF-8') : 'N/A';
+$sanitizedData = compact('regId', 'name', 'age', 'phone', 'email', 'speciality', 'state', 'city', 'couponCode');
+error_log("[{$regId}] Input data sanitized successfully.");
+
+
+// --- 4. PHPMailer Email Sending ---
+// This section is wrapped in its own try-catch so that an email failure
+// does not stop the user from proceeding to the payment gateway.
 try {
-    // Sanitize input data
-    $regId = 'CCLREG' . date('YmdHis');
-    $name = htmlspecialchars(trim($_POST['name']), ENT_QUOTES, 'UTF-8');
-    $age = htmlspecialchars(trim($_POST['age']), ENT_QUOTES, 'UTF-8');
-    $phone = htmlspecialchars(trim($_POST['phone']), ENT_QUOTES, 'UTF-8');
-    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
-    $speciality = htmlspecialchars(trim($_POST['speciality']), ENT_QUOTES, 'UTF-8');
-    $state = htmlspecialchars(trim($_POST['state']), ENT_QUOTES, 'UTF-8');
-    $city = htmlspecialchars(trim($_POST['city']), ENT_QUOTES, 'UTF-8');
-    $couponCode = isset($_POST['c-code']) && trim($_POST['c-code']) !== '' ? htmlspecialchars(trim($_POST['c-code']), ENT_QUOTES, 'UTF-8') : 'N/A';
-
-
-    // --- 5. PHPMailer Email Sending ---
     $mail = new PHPMailer(true);
     // SMTP Configuration
     $mail->isSMTP();
@@ -61,9 +78,10 @@ try {
     $mail->Port = $config['smtp']['port'];
 
     // Send notification to ADMIN
+    error_log("[{$regId}] Attempting to send admin notification to " . $config['email']['admin_email']);
     $mail->setFrom($config['email']['from_address'], $config['email']['from_name']);
     $mail->addAddress($config['email']['admin_email']);
-    $mail->addReplyTo($email, $name);  // not much need ig
+    $mail->addReplyTo($email, $name);
     $mail->isHTML(true);
     $mail->Subject = 'New Cricket League Registration - ' . $name;
     $mail->Body = '
@@ -82,16 +100,29 @@ try {
         </table>';
     $mail->AltBody = "Registration Details:\nID: $regId\nName: $name\nAge: $age\nMobile: $phone\nEmail: $email\nSpecialty: $speciality\nState: $state\nCity: $city\nCoupon: $couponCode";
     $mail->send();
-    
+    error_log("[{$regId}] Admin notification email sent successfully.");
+
     // Send confirmation to USER
+    error_log("[{$regId}] Attempting to send user confirmation to " . $email);
     $mail->clearAddresses();
     $mail->clearReplyTos();
     $mail->addAddress($email, $name);
     $mail->Subject = 'Your Registration for Champion Cricket League';
     $mail->Body = "<h3>Hi {$name},</h3><p>Thank you for registering. Your registration ID is: <strong>{$regId}</strong>. Please proceed with the payment to complete the process.</p>";
     $mail->send();
+    error_log("[{$regId}] User confirmation email sent successfully.");
 
-    // --- 6. Calculate Amount and Create Razorpay Order ---
+} catch (PHPMailerException $e) {
+    // Log the email error but don't stop the script. The user can still pay.
+    error_log("[{$regId}] WARNING: PHPMailer failed to send email. Error: " . $e->errorMessage() . ". The process will continue to payment.");
+}
+
+
+// --- 5. Main Payment Processing Logic ---
+// This is the critical part. If this fails, the user cannot proceed.
+try {
+    // --- Calculate Amount and Create Razorpay Order ---
+    error_log("[{$regId}] Calculating amount for specialty: '{$speciality}'.");
     $amount_in_inr = 0;
     switch ($speciality) {
         case 'Batsman':
@@ -103,20 +134,24 @@ try {
             $amount_in_inr = 1499;
             break;
         default:
-            throw new Exception('Invalid specialty selected.');
+            // This is a data integrity issue, should be a hard failure.
+            throw new Exception('Invalid specialty selected: ' . $speciality);
     }
     $amount_in_paise = $amount_in_inr * 100;
+    error_log("[{$regId}] Amount calculated. INR: {$amount_in_inr}, Paise: {$amount_in_paise}.");
 
     $api = new Api(KEY_ID, KEY_SECRET);
     $orderData = [
-        'receipt'         => $regId, // Use our own Reg ID as receipt
+        'receipt'         => $regId,
         'amount'          => $amount_in_paise,
         'currency'        => 'INR',
         'payment_capture' => 1
     ];
+    error_log("[{$regId}] Creating Razorpay order with data: " . json_encode($orderData));
     $razorpayOrder = $api->order->create($orderData);
+    error_log("[{$regId}] Razorpay order created successfully. Order ID: " . $razorpayOrder['id']);
 
-    // --- 7. Prepare and Send Success Response ---
+    // --- Prepare and Send Success Response ---
     $response_data = [
         "status"       => "success",
         "razorpay_key" => KEY_ID,
@@ -131,14 +166,20 @@ try {
             "contact"  => $phone,
         ],
     ];
+
+    error_log("[{$regId}] Sending success response to client for Order ID: {$razorpayOrder['id']}.");
     echo json_encode($response_data);
     exit;
 
+} catch (RazorpayError $e) {
+    http_response_code(500);
+    $errorMsg = "A Razorpay API error occurred. HTTP Status: " . $e->getStatusCode() . ". Code: " . $e->getCode() . ". Message: " . $e->getMessage();
+    error_log("[{$regId}] CRITICAL ERROR: " . $errorMsg . " | Data: " . json_encode($sanitizedData));
+    echo json_encode(['error' => 'Payment gateway error. Please try again in a few moments.']);
+    exit;
 } catch (Exception $e) {
-    // --- 8. Catch-All Error Handler ---
-    http_response_code(500); // Internal Server Error
-    error_log("PROCESS-REGISTRATION ERROR: " . $e->getMessage()); // Log the detailed error for you
-    // Send a generic error message to the user
-    echo json_encode(['error' => 'An unexpected error occurred. Please try again later.']);
+    http_response_code(500);
+    error_log("[{$regId}] CRITICAL ERROR: An unexpected exception occurred. Message: " . $e->getMessage() . " in " . $e->getFile() . " on line " . $e->getLine() . " | Data: " . json_encode($sanitizedData));
+    echo json_encode(['error' => 'An unexpected error occurred. Our team has been notified. Please try again later.']);
     exit;
 }
