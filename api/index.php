@@ -776,7 +776,7 @@
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="item-img">
-                        <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859628/2_xqoh6n.png" alt="advantages-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1661890079209-72b76e49768f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3JpY2tldCUyMGNvYWNoaW5nfGVufDB8fDB8fHww" alt="advantages-image">
                         <div class="overlay bottom-overlay">
 
                             <div class="text"><b>Expert Coaching</b>
@@ -791,7 +791,7 @@
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="item-img ">
-                        <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859693/3_cmsn5m.png" alt="advantages-image">
+                        <img src="https://images.unsplash.com/photo-1595207732481-22cccd3480fe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3JpY2tldCUyMHJld2FyZHN8ZW58MHx8MHx8fDA%3D" alt="advantages-image">
                         <div class="overlay bottom-overlay">
 
                             <div class="text"><b>Grand Rewards</b>
@@ -834,7 +834,7 @@
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="item-img ">
-                        <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859870/6_yixwzo.png" alt="advantages-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1721963697116-7deda773f6e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3JpY2tldCUyMFRvcC1RdWFsaXR5JTIwRmFjaWxpdGllc3xlbnwwfHwwfHx8MA%3D%3D" alt="advantages-image">
                         <div class="overlay bottom-overlay">
 
                             <div class="text"><b>Fair and Fun Matches</b>
@@ -848,7 +848,7 @@
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="item-img">
-                        <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859919/7_r38ntp.png" alt="advantages-image">
+                        <img src="https://images.unsplash.com/photo-1765429154824-b4a7dd58f7c3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNyaWNrZXQlMjB0ZWFtJTIwc3Bpcml0fGVufDB8fDB8fHww" alt="advantages-image">
                         <div class="overlay bottom-overlay">
 
                             <div class="text"><b> Team Spirit</b>
@@ -1317,72 +1317,10 @@
 
 <!-- end loaciton where we play match -->
 
- <div class="container py-5 text-center">
-        <div class="row">
-            <div class="col-md-12">
-                <h2> Collages</h2>
-                <div class="dots text-center">
-                    <div class="dot1"> </div>
-                    <div class="dot1"></div>
-                    <div class="dot1"></div>
-                    <div class="dot2"></div>
-                </div>
-
-            </div>
-            <div class="col-md-12 py-4">
-                <div class="sponser-carousel owl-carousel owl-theme section animate-on-scroll slide-left">
-                    <div class="item">
-                        <div class="circel">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969791/sponser1_noxpbz.jpg" class="mx-auto d-block" alt="banner-image">
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="circel">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969804/sponser6_q8uryp.png" class="mx-auto d-block" alt="banner-image">
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="circel">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969802/sponser5_kp8arw.png" class="mx-auto d-block" alt="banner-image">
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="circel">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969798/sponser4_f1x3n1.png" class="mx-auto d-block mt-4" alt="banner-image">
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="circel">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969797/sponser3_fzuxaf.png" class="mx-auto d-block" alt="banner-image">
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="circel">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969793/sponser2_qonpx0.png" class="mx-auto d-block" alt="banner-image">
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-
-
 <!-- Testimonial Section -->
 <section class="testimonials py-5 bg-light">
 
-    <div class="container py-5 text-center">
+    <!-- <div class="container py-5 text-center">
         <div class="row">
             <div class="col-md-12">
                 <h2>Our Teams</h2>
@@ -1472,9 +1410,9 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="container py-lg-5">
-        <!-- Heading -->
+        
         <div class="row">
             <div class="col-lg-8">
                 <h6 class="text-primary">Testimonials-</h6>
