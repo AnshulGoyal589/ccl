@@ -43,7 +43,7 @@
             <img src="/assets/images/three.png" width="100%" alt="banner-image-3">
         </div>
         <div class="item">
-            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544115/3_gpotyv.png" width="100%" alt="banner-image-4">
+            <img src="/assets/images/four.png" width="100%" alt="banner-image-4">
         </div>
     </div>
 
@@ -58,7 +58,7 @@
             <img src="/assets/images/three.png" width="100%" alt="banner-image-3">
         </div>
         <div class="item">
-            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544115/3_gpotyv.png" width="100%" alt="banner-image-4">
+            <img src="/assets/images/four.png" width="100%" alt="banner-image-4">
         </div>
     </div>
 </section>
@@ -242,7 +242,7 @@
                                 <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374918/S2190012_1_aaxcho.jpg" alt="Slider Image 1">
                             </div>
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374918/S2190010_1_wzvyeo.jpg" alt="Slider Image 2">
+                                <img src="/assets/images/trail3.jpg" alt="Slider Image 2">
                             </div>
                             <div>
                                 <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374917/S2190013_1_ojawry.jpg" alt="Slider Image 3">
@@ -277,10 +277,10 @@
                         <div class="gallery-slider d-flex justify-content-center align-items-center flex-row flex-nowrap" style="gap: 16px;">
 
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760375118/IMG-20250907-WA0077_sst2ir.jpg" alt="Slider Image 1">
+                                <img src="/assets/images/trail1.jpg" alt="Slider Image 1">
                             </div>
                             <!-- <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760375115/IMG-20250907-WA0076_epo6ne.jpg" alt="Slider Image 2">
+                                <img src="/assets/images/trail2.jpg" alt="Slider Image 2">
                             </div> -->
                             <div>
                                 <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760375115/IMG-20250907-WA0072_btcgcx.jpg" alt="Slider Image 3">

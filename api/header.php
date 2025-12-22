@@ -27,9 +27,9 @@
 <body>
 
     <div class="fixed-icon">
-        <a href="https://wa.me/917827434237"><img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760543667/1022px-WhatsApp.svg_f6mt0v.png" alt="icon"></a>
+        <a href="https://wa.me/917827434237"><img src="/assets/images/whatsapp.png" alt="icon"></a>
         <br>
-        <a href="tel:01169311383"><img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760543704/0be285c89368fd2d7b0499db071963ef_hyxled.svg" alt="icon"></a>
+        <a href="tel:01169311383"><img src="/assets/images/call_logo.svg" alt="icon"></a>
     </div>
     
     <!-- Navbar -->
