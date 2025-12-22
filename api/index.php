@@ -85,7 +85,7 @@
             </a>
         </div>
         <div class="col-md-4">
-            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760028219/6d0a2ed1-d067-4fb4-8053-5cc92578186b_ev2yy0.jpg" class="w-100 about-image" alt="about-image">
+            <img src="/assets/images/t22.jpg" class="w-100 about-image" alt="about-image">
         </div>
     </div>
 </div>
@@ -99,50 +99,6 @@
 <section class="selection-process py-5">
     <div class="gallery">
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-md-12 text-center text-black py-4">
-                    <h1>Gallery</h1>
-                    <div class="dots text-center">
-                        <div class="dot1"> </div>
-                        <div class="dot1"></div>
-                        <div class="dot1"></div>
-                        <div class="dot2"></div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-3">
-
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753967924/39b04034-fefd-4e8d-add0-1bd0301f5fb8.png" alt="Image 1" onclick="openLightbox(); setCurrentSlide(1)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753968295/24728768-971b-4094-bccf-9e156948a789.png" alt="Image 2" onclick="openLightbox(); setCurrentSlide(2)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753968365/d7e04e5a-cbb4-473d-8f56-1c38fcf12969.png" alt="Image 3" onclick="openLightbox(); setCurrentSlide(3)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753968409/06470fa5-1e26-44e3-a090-7f7482f8f7f3.png" alt="Image 4" onclick="openLightbox(); setCurrentSlide(4)">
-
-                </div>
-                <div class="col-md-3 col-3">
-
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753968444/61a7373b-0519-49b7-a1be-6de10c65a469.png" alt="Image 5" onclick="openLightbox(); setCurrentSlide(5)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753968495/32c101b6-2f62-49c5-a036-933ee2cb2805.png" alt="Image 6" onclick="openLightbox(); setCurrentSlide(6)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753968533/c17dfadd-9c6b-4d2b-aaad-01bbd1437eb8.png" alt="Image 7" onclick="openLightbox(); setCurrentSlide(7)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753968563/8d46ea83-019d-487e-8000-ee2d6a0fe36b.png" alt="Image 8" onclick="openLightbox(); setCurrentSlide(8)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753968599/efd49f42-4229-49aa-98f1-8e11076fe877.png" alt="Image 9" onclick="openLightbox(); setCurrentSlide(9)">
-
-                </div>
-                <div class="col-md-3 col-3">
-
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753968696/e3346a00-f2a2-4193-aa3a-3e9f87b2c5f2.png" alt="Image 10" onclick="openLightbox(); setCurrentSlide(10)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969362/5380f8f0-3796-4471-8386-6886ebc84bbf.png" alt="Image 11" onclick="openLightbox(); setCurrentSlide(11)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969591/g12_enjb82.jpg" alt="Image 12" onclick="openLightbox(); setCurrentSlide(12)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969592/g13_qefis7.jpg" alt="Image 13" onclick="openLightbox(); setCurrentSlide(13)">
-
-                </div>
-                <div class="col-md-3 col-3">
-
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969593/g14_jumco5.jpg" alt="Image 14" onclick="openLightbox(); setCurrentSlide(14)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753974606/g15_i9y3c9.jpg" alt="Image 15" onclick="openLightbox(); setCurrentSlide(15)">
-                    <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753969654/g16_hcjji1.jpg" alt="Image 16" onclick="openLightbox(); setCurrentSlide(16)">
-
-                </div>
-            </div> -->
             
             <div class="row">
                <div class="col-md-12 mt-5 text-black text-center py-4">
@@ -157,29 +113,29 @@
 
                  <div class="col-md-3 col-3">
 
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030340/IMG_8613_fyc9at.jpg" alt="Image 17" onclick="openLightbox(); setCurrentSlide(17)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030340/IMG_8611_m8pwkx.jpg" alt="Image 18" onclick="openLightbox(); setCurrentSlide(18)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8603_lwbztj.jpg" alt="Image 19" onclick="openLightbox(); setCurrentSlide(19)">
+                    <img src="/assets/images/t14.jpg" alt="Image 17" onclick="openLightbox(); setCurrentSlide(17)">
+                    <img src="/assets/images/t13.jpg" alt="Image 18" onclick="openLightbox(); setCurrentSlide(18)">
+                    <img src="/assets/images/t16.jpg" alt="Image 19" onclick="openLightbox(); setCurrentSlide(19)">
                    
 
                 </div>
                  <div class="col-md-3 col-3">
 
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8605_s09ol4.jpg" alt="Image 20" onclick="openLightbox(); setCurrentSlide(20)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8591_ojf25d.jpg" alt="Image 21" onclick="openLightbox(); setCurrentSlide(21)">
+                    <img src="/assets/images/t15.jpg" alt="Image 20" onclick="openLightbox(); setCurrentSlide(20)">
+                    <img src="/assets/images/t17.jpg" alt="Image 21" onclick="openLightbox(); setCurrentSlide(21)">
                     
                     
                 </div>
                 <div class="col-md-3 col-3">
                     
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8600_x5acdi.jpg" alt="Image 22" onclick="openLightbox(); setCurrentSlide(22)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8584_xaa4cq.jpg" alt="Image 23" onclick="openLightbox(); setCurrentSlide(23)">
+                    <img src="/assets/images/t19.jpg" alt="Image 22" onclick="openLightbox(); setCurrentSlide(22)">
+                    <img src="/assets/images/t18.jpg" alt="Image 23" onclick="openLightbox(); setCurrentSlide(23)">
                     
                 </div>
                 <div class="col-md-3 col-3">
                     
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030339/IMG_8596_fnpvbp.jpg" alt="Image 24" onclick="openLightbox(); setCurrentSlide(24)">
-                    <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760030338/IMG_8582_s1juld.jpg" alt="Image 25" onclick="openLightbox(); setCurrentSlide(25)">
+                    <img src="/assets/images/t20.jpg" alt="Image 24" onclick="openLightbox(); setCurrentSlide(24)">
+                    <img src="/assets/images/t21.jpg" alt="Image 25" onclick="openLightbox(); setCurrentSlide(25)">
                     
                 </div>
             </div>
@@ -202,19 +158,19 @@
                     <div class="gallery-slider-container">
                         <div class="gallery-slider d-flex justify-content-center align-items-center flex-row flex-nowrap" style="gap: 16px;">
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203495/IMG_8120_1_psnhrs.jpg" alt="Slider Image 1">
+                                <img src="/assets/images/t8.jpg" alt="Slider Image 1">
                             </div>
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203494/IMG_8119_1_m40f15.jpg" alt="Slider Image 2">
+                                <img src="/assets/images/t9.jpg" alt="Slider Image 2">
                             </div>
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203494/IMG_8117_1_f9r06u.jpg" alt="Slider Image 3">
+                                <img src="/assets/images/t10.jpg" alt="Slider Image 3">
                             </div>
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203487/IMG_8095_1_pclqkw.jpg" alt="Slider Image 4">
+                                <img src="/assets/images/t11.jpg" alt="Slider Image 4">
                             </div>
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760203482/IMG_8073_1_warwlv.jpg" alt="Slider Image 5">
+                                <img src="/assets/images/t12.jpg" alt="Slider Image 5">
                             </div>
                         </div>
                     </div>
@@ -239,22 +195,22 @@
                     <div class="gallery-slider-container">
                         <div class="gallery-slider d-flex justify-content-center align-items-center flex-row flex-nowrap" style="gap: 16px;">
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374918/S2190012_1_aaxcho.jpg" alt="Slider Image 1">
+                                <img src="/assets/images/t4.jpg" alt="Slider Image 1">
                             </div>
                             <div>
                                 <img src="/assets/images/trail3.jpg" alt="Slider Image 2">
                             </div>
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374917/S2190013_1_ojawry.jpg" alt="Slider Image 3">
+                                <img src="/assets/images/t5.jpg" alt="Slider Image 3">
                             </div>
                         </div>
                         
                         <div class="gallery-slider d-flex justify-content-center align-items-center flex-row flex-nowrap" style="gap: 16px;">
                         <div>
-                            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374917/S2190008_1_xa5ase.jpg" alt="Slider Image 4">
+                            <img src="/assets/images/t6.jpg" alt="Slider Image 4">
                         </div>
                         <div>
-                            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760374917/S2190011_1_wdj6ad.jpg" alt="Slider Image 5">
+                            <img src="/assets/images/t7.jpg" alt="Slider Image 5">
                         </div>
             </div>
 
@@ -630,123 +586,6 @@
 </div>
 
 <!-- end seleciton process section -->
-
-
-
-
-<!-- start faq section -->
-<!-- <section class="faq-section">
-    <div class="container">
-        <div class="row mt-3">
-            <div class="col-md-6 ">
-                 <video class="banner-video" autoplay loop muted playsinline preload="auto">
-                    <source src="https://res.cloudinary.com/dxk6wjttq/video/upload/v1753967837/faq_rbkhz7.mp4"  type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="col-md-6 py-4">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item section animate-on-scroll slide-left">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                <i class="fa-solid fa-caret-right"></i> &nbsp; Registration and Initial Selection
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Registration Fee: INR 999
-                                (+ GST) for regular players; INR 1299 +
-                                GST for all-rounders.
-                            </div>
-                        </div>
-                    </div>
-
-                  
-
-
-                    <div class="accordion-item section animate-on-scroll slide-left">
-                        <h2 class="accordion-header" id="flush-headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour">
-                                <i class="fa-solid fa-caret-right"></i> &nbsp; How do I register for the academy?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">You can register online through our website or visit our academy
-                                office to fill out the registration form. If you have any questions, feel free to
-                                contact us.
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div class="accordion-item section animate-on-scroll slide-left">
-                        <h2 class="accordion-header" id="flush-headingSeven">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
-                                aria-controls="flush-collapseSeven">
-                                <i class="fa-solid fa-caret-right"></i> &nbsp; What is included in the training program?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Our training program includes batting, bowling, fielding,
-                                fitness conditioning, and match simulations. We focus on developing both physical skills
-                                and game strategy.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item section animate-on-scroll slide-left">
-                        <h2 class="accordion-header" id="flush-headingEight">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseEight" aria-expanded="false"
-                                aria-controls="flush-collapseEight">
-                                <i class="fa-solid fa-caret-right"></i> &nbsp; Are the coaches certified?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseEight" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Yes, all our coaches are certified with extensive experience in
-                                training young cricketers. Many of them have played at national 
-                                levels.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item section animate-on-scroll slide-left">
-                        <h2 class="accordion-header" id="flush-headingNine">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseNine" aria-expanded="false"
-                                aria-controls="flush-collapseNine">
-                                <i class="fa-solid fa-caret-right"></i> &nbsp; Do you provide any trial classes?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseNine" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Yes, we offer 3 free trial session for new students. This allows
-                                players to experience our training environment before committing to a program.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- end faq section -->
-
-
-
-
-
 
 
 <!-- start advantages section -->
