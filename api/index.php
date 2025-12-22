@@ -34,13 +34,13 @@
 <section class="bannere-section">
     <div class="banner-carousel laptop-view owl-carousel">
         <div class="item">
-            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544127/4_y11n7t.png" width="100%" alt="banner-image-1">
+            <img src="/assets/images/one.png" width="100%" alt="banner-image-1">
         </div>
         <div class="item">
-            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544118/6_ximsge.png" width="100%" alt="banner-image-2">
+            <img src="/assets/images/two.png" width="100%" alt="banner-image-2">
         </div>
         <div class="item">
-            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544117/5_hcetoi.png" width="100%" alt="banner-image-3">
+            <img src="/assets/images/three.png" width="100%" alt="banner-image-3">
         </div>
         <div class="item">
             <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544115/3_gpotyv.png" width="100%" alt="banner-image-4">
@@ -49,13 +49,13 @@
 
     <div class="banner-carousel mobile-view owl-carousel">
         <div class="item">
-            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544127/4_y11n7t.png" width="100%" alt="banner-image-1">
+            <img src="/assets/images/one.png" width="100%" alt="banner-image-1">
         </div>
         <div class="item">
-            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544118/6_ximsge.png" width="100%" alt="banner-image-2">
+            <img src="/assets/images/two.png" width="100%" alt="banner-image-2">
         </div>
         <div class="item">
-            <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544117/5_hcetoi.png" width="100%" alt="banner-image-3">
+            <img src="/assets/images/three.png" width="100%" alt="banner-image-3">
         </div>
         <div class="item">
             <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544115/3_gpotyv.png" width="100%" alt="banner-image-4">

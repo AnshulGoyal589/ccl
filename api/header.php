@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Champion Cricket League </title>
 
-    <link rel="icon" href="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544651/38e0ef61-bc38-4686-9644-15c8ad7316a3_p9kes0.jpg">
+    <link rel="icon" href="/assets/images/logo.jpg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/style.css">
@@ -74,7 +74,7 @@
     <nav class="navbar  navbar-expand-lg navbar-black bg-black" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.php">
-                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544651/38e0ef61-bc38-4686-9644-15c8ad7316a3_p9kes0.jpg" alt="Logo" class="logo me-2">
+                <img src="/assets/images/logo.jpg" alt="Logo" class="logo me-2">
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

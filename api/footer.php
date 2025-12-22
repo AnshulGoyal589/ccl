@@ -4,7 +4,7 @@
         <div class="row">
             <!-- Logo and Description -->
             <div class="col-lg-4 col-md-6 mb-4">
-               <a href="index.php"> <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760544651/38e0ef61-bc38-4686-9644-15c8ad7316a3_p9kes0.jpg" alt="CCL Logo" class="logo mb-3"></a>
+               <a href="index.php"> <img src="/assets/images/logo.jpg" alt="CCL Logo" class="logo mb-3"></a>
                 <h5>Champion Cricket League</h5>
                 <p>Champion Cricket League, the ultimate stage,
 Where passion and skill ignite every page.
