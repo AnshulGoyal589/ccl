@@ -239,7 +239,7 @@
                                 <img src="/assets/images/trail2.jpg" alt="Slider Image 2">
                             </div> -->
                             <div>
-                                <img src="https://res.cloudinary.com/dmykc7bgs/image/upload/v1760375115/IMG-20250907-WA0072_btcgcx.jpg" alt="Slider Image 3">
+                                <img src="/assets/images/t23.jpg" alt="Slider Image 3">
                             </div>
                         </div>
 
