@@ -789,7 +789,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center mb-5">Trail Locations</h2>
+                <h2 class="text-center mb-5">Trial Locations</h2>
             </div>
         </div>
 
@@ -915,16 +915,16 @@
                         <div class="state-box">Jharkhand</div>
                         </div>
                     </div>
-                    <!--<div class="row text-center mt-2">-->
-                    <!--    <div class="col connector">-->
-                    <!--        <div class="line"></div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <!--<div class="row text-center mb-4">-->
-                    <!--    <div class="col">-->
-                    <!--        <div class="city-box">Dehradun</div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <div class="row text-center mt-2">
+                       <div class="col connector">
+                           <div class="line"></div>
+                       </div>
+                    </div>
+                    <div class="row text-center mb-4">
+                       <div class="col">
+                           <div class="city-box">Ranchi</div>
+                       </div>
+                    </div>
                 
                 
                     

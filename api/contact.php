@@ -46,7 +46,7 @@
                         <a><i class="fa-solid fa-envelope"></i> championcricketleague@outlook.com  </a><br>
                          <a> <i class="fa-regular fa-clock"></i> Time 10 AM - 7 PM</a><br>
                         <a><i class="fa-solid fa-phone"></i> 011 69311383</a><br>
-                         <a><i class="fa-brands fa-whatsapp"></i> +91 7827434237</a><br>
+                         <a><i class="fa-brands fa-whatsapp"></i> +91 8800763536</a><br>
                           <!--<a><i class="fa-solid fa-phone"></i> +91 08069377899</a><br>-->
                           
                          

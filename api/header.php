@@ -27,7 +27,7 @@
 <body>
 
     <div class="fixed-icon">
-        <a href="https://wa.me/917827434237"><img src="/assets/images/whatsapp.png" alt="icon"></a>
+        <a href="https://wa.me/918800763536"><img src="/assets/images/whatsapp.png" alt="icon"></a>
         <br>
         <a href="tel:01169311383"><img src="/assets/images/call_logo.svg" alt="icon"></a>
     </div>
