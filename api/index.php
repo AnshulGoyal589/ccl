@@ -1080,63 +1080,42 @@
                 <div class="spnsoer2-carousel owl-carousel owl-theme ">
                     <div class="item  p-3">
                         <div class="circel-2">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859312/1_ajk5xw.jpg" class="mx-auto d-block" alt="banner-image">
+                            <img src="/assets/images/sponser1.jpg" class="mx-auto d-block" alt="banner-image">
                         </div>
 
                     </div>
                     <div class="item  p-3">
                        <div class="circel-2">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859553/2_q9vre2.jpg" class="mx-auto d-block" alt="banner-image">
+                            <img src="/assets/images/sponser2.jpg" class="mx-auto d-block" alt="banner-image">
                         </div>
 
                     </div>
                     <div class="item  p-3">
                        <div class="circel-2">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859662/3_gkagq8.jpg" class="mx-auto d-block" alt="banner-image">
+                            <img src="/assets/images/sponser3.jpg" class="mx-auto d-block" alt="banner-image">
                         </div>
 
                     </div>
                     <div class="item  p-3">
                        <div class="circel-2">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859757/4s_rqkhlg.png" class="mx-auto d-block " alt="banner-image">
+                            <img src="/assets/images/sponser4.jpg" class="mx-auto d-block " alt="banner-image">
                         </div>
 
                     </div>
                     <div class="item  p-3">
                        <div class="circel-2">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859819/5s_jritge.png" class="mx-auto d-block" alt="banner-image">
+                            <img src="/assets/images/sponser5.jpg" class="mx-auto d-block" alt="banner-image">
                         </div>
 
                     </div>
                     <div class="item  p-3">
                       <div class="circel-2">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859841/6_sdtguo.jpg" class="mx-auto d-block" alt="banner-image">
+                            <img src="/assets/images/sponser6.jpg" class="mx-auto d-block" alt="banner-image">
                         </div>
 
                     </div>
 
 
-                     <div class="item  p-3">
-                       <div class="circel-2">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859894/7_afl6f4.jpg" class="mx-auto d-block" alt="banner-image">
-                        </div>
-
-                    </div>
-                    
-                    
-                     <div class="item  p-3">
-                       <div class="circel-2">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753859944/8_rzoua2.jpg" class="mx-auto d-block" alt="banner-image">
-                        </div>
-
-                    </div>
-<!--                     
-                     <div class="item  p-3">
-                       <div class="circel-2">
-                            <img src="https://res.cloudinary.com/dxk6wjttq/image/upload/v1753860005/9_nxad6a.jpg" class="mx-auto d-block" alt="banner-image">
-                        </div>
-
-                    </div> -->
 
 
 
