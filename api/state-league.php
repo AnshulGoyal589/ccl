@@ -69,7 +69,7 @@
                     </li>
                      <li>
                         <b>
-                            1 Stumping - 5 Points
+                            1 Stumping - 10 Points
                         </b>
                        
                     </li>

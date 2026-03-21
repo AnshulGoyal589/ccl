@@ -796,7 +796,8 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="container-fluid">
-                    <!-- Row for Rajasthan -->
+
+                    <!-- Row for Gujarat -->
                     <div class="row text-center">
                         <div class="col-12">
                             <div class="state-box">Gujarat</div>
@@ -814,6 +815,98 @@
                         </div>
                         <div class="col">
                             <div class="city-box">Ahmedabad</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Surat</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Rajkot</div>
+                        </div>
+                    </div>
+
+                     <!-- Row for Delhi -->
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="state-box">Delhi (NCR)</div>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-2">
+                        <div class="col connector">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="row text-center mb-4">
+                    
+                        <div class="col">
+                            <div class="city-box">Noida</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Ghaziabad</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Gurugram</div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Row for Rajasthan -->
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="state-box">Rajasthan (RJ)</div>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-2">
+                        <div class="col connector">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="row text-center mb-4">
+                        <div class="col">
+                            <div class="city-box">Jodhpur</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Jaipur</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Kota</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Amritsar</div>
+                        </div>
+                    </div>
+
+                    <!-- Row for Uttar Pradesh -->
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="state-box">Uttar Pradesh (UP)</div>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-2">
+                        <div class="col connector">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="row text-center mb-4">
+                        <div class="col">
+                            <div class="city-box">Lucknow</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Kanpur</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Varansi</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Agra</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Bareilly</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Meerut</div>
+                        </div>
+                        <div class="col">
+                            <div class="city-box">Ghaziabad (UP West)</div>
                         </div>
                     </div>
 
@@ -843,10 +936,8 @@
                         </div>
 
                     </div>
-
                   
-
-                    <!-- Row for Himachal Pradesh -->
+                    <!-- Row for Haryana -->
                     <div class="row text-center">
                         <div class="col-12">
                             <div class="state-box">Haryana (HR)</div>
@@ -865,18 +956,18 @@
                             <div class="city-box">Hisar</div>
                         </div>
                         <div class="col">
-                            <div class="city-box">Gurugram</div>
+                            <div class="city-box">Karnal</div>
                         </div>
                         <div class="col">
-                            <div class="city-box">Kurukshetra</div>
+                            <div class="city-box">Panipat</div>
                         </div>
 
                     </div>
 
-                    <!-- Row for j&k -->
+                    <!-- Row for Punjab -->
                     <div class="row text-center">
                         <div class="col-12">
-                            <div class="state-box">Jammu Kashmir (J&K)</div>
+                            <div class="state-box">Punjab (PB)</div>
                         </div>
                     </div>
                     <div class="row text-center mt-2">
@@ -886,55 +977,30 @@
                     </div>
                     <div class="row text-center mb-4">
                         <div class="col">
-                            <div class="city-box">Jammu</div>
+                            <div class="city-box">Chandigarh</div>
                         </div>
                         <div class="col">
-                            <div class="city-box">Srinagar</div>
+                            <div class="city-box">Jalandhar</div>
                         </div>
-                    </div>
-                    
-                    
-                    <div class="row text-center">
-                    <div class="col-12">
-                        <div class="state-box">Uttarakhand (UK)</div>
-                        </div>
-                    </div>
-                    <div class="row text-center mt-2">
-                        <div class="col connector">
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="row text-center mb-4">
                         <div class="col">
-                            <div class="city-box">Dehradun</div>
+                            <div class="city-box">Amritsar</div>
                         </div>
-                    </div>
-                    
-                     <div class="row text-center">
-                    <div class="col-12">
-                        <div class="state-box">Jharkhand</div>
+                        <div class="col">
+                            <div class="city-box">Mohali</div>
                         </div>
-                    </div>
-                    <div class="row text-center mt-2">
-                       <div class="col connector">
-                           <div class="line"></div>
-                       </div>
-                    </div>
-                    <div class="row text-center mb-4">
-                       <div class="col">
-                           <div class="city-box">Ranchi</div>
-                       </div>
-                    </div>
-                
-                
+                        <div class="col">
+                            <div class="city-box">Ludhiana</div>
+                        </div>
+                    </div>               
                     
                 </div>
             </div>
             <div class="col-md-6">
-                <!-- Row for Rajasthan -->
+  
+                <!-- Row for j&k -->
                 <div class="row text-center">
                     <div class="col-12">
-                        <div class="state-box">Rajasthan (RJ)</div>
+                        <div class="state-box">Jammu Kashmir (J&K)</div>
                     </div>
                 </div>
                 <div class="row text-center mt-2">
@@ -944,74 +1010,13 @@
                 </div>
                 <div class="row text-center mb-4">
                     <div class="col">
-                        <div class="city-box">Jodhpur</div>
+                        <div class="city-box">Jammu</div>
                     </div>
                     <div class="col">
-                        <div class="city-box">Jaipur</div>
-                    </div>
-                    <div class="col">
-                        <div class="city-box">Kota</div>
-                    </div>
-                    <div class="col">
-                        <div class="city-box">Bikaner</div>
-                    </div>
-                    <div class="col">
-                        <div class="city-box">Jaisalmer</div>
+                        <div class="city-box">Srinagar</div>
                     </div>
                 </div>
-
-                <!-- Row for Uttar Pradesh -->
-                <div class="row text-center">
-                    <div class="col-12">
-                        <div class="state-box">Uttar Pradesh (UP)</div>
-                    </div>
-                </div>
-                <div class="row text-center mt-2">
-                    <div class="col connector">
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="row text-center mb-4">
-                    <div class="col">
-                        <div class="city-box">Lucknow (Centre)</div>
-                    </div>
-                    <div class="col">
-                        <div class="city-box">Prayagraj (South)</div>
-                    </div>
-                    <div class="col">
-                        <div class="city-box">Bareilly (West)</div>
-                    </div>
-                    <div class="col">
-                        <div class="city-box">Agra (West)</div>
-                    </div>
-                    <div class="col">
-                        <div class="city-box">Noida (NCR)</div>
-                    </div>
-                </div>
-
-                <!-- Row for Punjab -->
-                <div class="row text-center">
-                    <div class="col-12">
-                        <div class="state-box">Punjab (PB)</div>
-                    </div>
-                </div>
-                <div class="row text-center mt-2">
-                    <div class="col connector">
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="row text-center mb-4">
-                    <div class="col">
-                        <div class="city-box">Chandigarh</div>
-                    </div>
-                    <div class="col">
-                        <div class="city-box">Jalandhar</div>
-                    </div>
-                    <div class="col">
-                        <div class="city-box">Amritsar</div>
-                    </div>
-                </div>
-
+                    
                 <!-- Row for Himachal Pradesh -->
                 <div class="row text-center">
                     <div class="col-12">
@@ -1027,15 +1032,18 @@
                     <div class="col">
                         <div class="city-box">Shimla</div>
                     </div>
+                    <div class="col">
+                        <div class="city-box">Mandi</div>
+                    </div>
+                    <div class="col">
+                        <div class="city-box">Dharamshala</div>
+                    </div>
                 </div>
-
+                
                 <!-- Row for Uttarakhand -->
-                
-                
-                 <!-- Row for Himachal Pradesh -->
                 <div class="row text-center">
-                    <div class="col-12">
-                        <div class="state-box">Delhi (NCR)</div>
+                <div class="col-12">
+                    <div class="state-box">Uttarakhand (UK)</div>
                     </div>
                 </div>
                 <div class="row text-center mt-2">
@@ -1044,15 +1052,137 @@
                     </div>
                 </div>
                 <div class="row text-center mb-4">
-                 
                     <div class="col">
-                        <div class="city-box">Dwarka</div>
+                        <div class="city-box">Dehradun</div>
                     </div>
-                  
+                    <div class="col">
+                        <div class="city-box">Haridwar</div>
+                    </div>
+                    <div class="col">
+                        <div class="city-box">Haldwani</div>
+                    </div>
                 </div>
-
-
-                <!-- Row for Uttarakhand -->
+                
+                <!-- Row for Jharkhand -->
+                <div class="row text-center">
+                <div class="col-12">
+                    <div class="state-box">Jharkhand</div>
+                    </div>
+                </div>
+                <div class="row text-center mt-2">
+                   <div class="col connector">
+                       <div class="line"></div>
+                   </div>
+                </div>
+                <div class="row text-center mb-4">
+                   <div class="col">
+                       <div class="city-box">Ranchi</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Jamshedpur</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Dhanbad</div>
+                   </div>
+                </div>
+                
+                <!-- Row for Maharashtra -->
+                <div class="row text-center">
+                <div class="col-12">
+                    <div class="state-box">Maharashtra</div>
+                    </div>
+                </div>
+                <div class="row text-center mt-2">
+                   <div class="col connector">
+                       <div class="line"></div>
+                   </div>
+                </div>
+                <div class="row text-center mb-4">
+                   <div class="col">
+                       <div class="city-box">Mumbai</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Pune</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Nagpur</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Aurangabad</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Nashik</div>
+                   </div>
+                </div>
+                
+                <!-- Row for Chhattisgarh -->
+                <div class="row text-center">
+                <div class="col-12">
+                    <div class="state-box">Chhattisgarh</div>
+                    </div>
+                </div>
+                <div class="row text-center mt-2">
+                   <div class="col connector">
+                       <div class="line"></div>
+                   </div>
+                </div>
+                <div class="row text-center mb-4">
+                   <div class="col">
+                       <div class="city-box">Raipur</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Bilaspur</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Durg</div>
+                   </div>
+                </div>
+                
+                <!-- Row for Odisha -->
+                <div class="row text-center">
+                <div class="col-12">
+                    <div class="state-box">Odisha</div>
+                    </div>
+                </div>
+                <div class="row text-center mt-2">
+                   <div class="col connector">
+                       <div class="line"></div>
+                   </div>
+                </div>
+                <div class="row text-center mb-4">
+                   <div class="col">
+                       <div class="city-box">Bhubaneswar</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Cuttack</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Rourkela</div>
+                   </div>
+                </div>
+                
+                <!-- Row for Bihar -->
+                <div class="row text-center">
+                <div class="col-12">
+                    <div class="state-box">Bihar</div>
+                    </div>
+                </div>
+                <div class="row text-center mt-2">
+                   <div class="col connector">
+                       <div class="line"></div>
+                   </div>
+                </div>
+                <div class="row text-center mb-4">
+                   <div class="col">
+                       <div class="city-box">Patna</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Gaya</div>
+                   </div>
+                   <div class="col">
+                       <div class="city-box">Muzzaffarpur</div>
+                   </div>
+                </div>
                 
             </div>
         </div>
