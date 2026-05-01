@@ -30,9 +30,6 @@
                     Proof of identity– School ID, Adhar Card, Passport, etc.
 
                     </li>
-                    <li>
-                    Indemnity bond on a Re. 10 non-judicial stamp paper duly attested by Notary Public/Gazetted Officer (Download content for indemnity bond from the link below).
-                    </li>
 
                    
                 </ol>

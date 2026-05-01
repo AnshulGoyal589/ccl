@@ -22,7 +22,7 @@
                         Contact information (email, phone number, address)
                     </li>
                     <li>
-                        Payment information for fees (credit/debit card details)
+                        Payment information for fees
                     </li>
                     <li>
                         Emergency contact details

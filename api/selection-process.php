@@ -60,9 +60,22 @@
                     <ul>
                         <li><b>Registration Fee : </b> <b>INR 999</b> for regular players; INR 1199 for all-rounders.</li>
 
-                        <li>States Covered: Delhi NCR, Uttar Pradesh, Rajasthan,
-                            Punjab, Madhya Pradesh, Uttarakhand, Gujrat, Himachal Pradesh,
-                            Haryana, and Jammu.
+                        <li>States Covered: 
+                            Gujarat, 
+                            Delhi NCR, 
+                            Uttar Pradesh, 
+                            Rajasthan,
+                            Punjab,
+                            Madhya Pradesh,
+                            Jammu & Kashmir,
+                            Jharkhand,
+                            Maharashtra,
+                            Chattisgarh,
+                            Uttarakhand,
+                            Odisha,
+                            Bihar, 
+                            Himachal Pradesh and 
+                            Haryana.
                         </li>
 
                         <li>
@@ -186,7 +199,7 @@
                         <li>1 Run: 1 point</li>
                         <li>1 Catch: 5 points</li>
                         <li>1 wicket: 20 points</li>
-                        <li>1 Stumping (Wicket Keeper): 5 points</li>
+                        <li>1 Stumping (Wicket Keeper): 10 points</li>
                         <li>1 Runout: 5 points</li>
                         <li>Requirements: Minimum 100 points to
                             qualify.</li>
@@ -238,11 +251,10 @@
                     </h2>
                     <h4>AWARDS</h4>
                     <ul>
-                         <li><b>U16 Awards : </b>Winning team will get 11 cricket kits (SS/SG).</li>
-                          <li><b>U16 Runner Up  : </b>⁠Runner up team will get white dress and ambrose cricket shoes.</li>
-                           <li><b>U16 Man of the Series : </b>
+                        <li><b>U16 Awards : </b>Winning team will get 11 cricket kits (SS/SG).</li>
+                        <li><b>U16 Man of the Series : </b>
                           Man of the series will BMW Bicycle
-                          <li><b>U16 Sponsor : </b>Company will sponsor the best 25 players for 2 years from U16 team.</li>
+                        <li><b>U16 Sponsor : </b>Company will sponsor the best 25 players for 2 years from U16 team.</li>
                         <li><b>Open League Winning Team : </b>10 motorcycles (brands:
                             Hero/Bajaj/Yamaha)</li>
                         <li><b>Open League Man of the Match : </b>
@@ -253,7 +265,7 @@
                          BMW/ Triumph
                         </li>
                         <li><b>Open League Runner Up Team : </b>
-                            Cash prize INR 11,000 and cricket kit.
+                            Cash prize or cricket kit.
                         </li>
                        
                          <li><b>Open League Sponsor : </b>Company will sponsor the best 25 players for 2 years from open league team.</li>

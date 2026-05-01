@@ -109,6 +109,16 @@
                                 <input type="text" name="city" class="form-control" id="city" placeholder="City" required>
                             </div>
                         </div>
+
+                        <div class="mb-3">
+                            <label for="amount" class="form-label text-black">Registration Fee (INR)</label>
+                            <div class="input-group">
+                                <span class="input-group-text">₹</span>
+                                <input type="number" name="amount" class="form-control" id="amount" placeholder="Enter amount" required min="1">
+                            </div>
+                            <small class="text-muted">Enter the amount based on your specialty listed on the right.</small>
+                        </div>
+
                         
                         <!-- Referral Code Field -->
                         <div class="mb-3">
@@ -217,7 +227,7 @@
                 
                 // Display the amount in the modal (converting paise to rupees)
                 const amountInRupees = data.amount / 100;
-                paymentAmountSpan.textContent = `₹${amountInRupees.toFixed(2)}/-`;
+                paymentAmountSpan.textContent = `₹${amountInRupees.toLocaleString('en-IN')}/-`;
 
                 paymentModal.show(); // Show the popup
 
