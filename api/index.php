@@ -250,7 +250,7 @@
             <!-- 13th October Match Trials -->
             <div class="row">
                 <div class="col-md-12 mt-5 text-black text-center py-4">
-                     <h1>State Match Trials</h1>
+                     <h1>State Match</h1>
                      <div class="dots text-center">
                          <div class="dot1"> </div>
                          <div class="dot1"></div>
@@ -293,7 +293,7 @@
             <!-- 14th October Match Trials -->
              <div class="row">
                 <div class="col-md-12 mt-5 text-black text-center py-4">
-                     <h1>State Match Trials</h1>
+                     <h1>State Match</h1>
                      <div class="dots text-center">
                          <div class="dot1"> </div>
                          <div class="dot1"></div>
@@ -333,7 +333,7 @@
             <!-- 15th October Match Trials -->
             <div class="row">
                 <div class="col-md-12 mt-5 text-black text-center py-4">
-                     <h1>State Match Trials</h1>
+                     <h1>State Match</h1>
                      <div class="dots text-center">
                          <div class="dot1"> </div>
                          <div class="dot1"></div>
@@ -376,7 +376,7 @@
             <!-- 16th October Match Trials -->
             <div class="row">
                 <div class="col-md-12 mt-5 text-black text-center py-4">
-                     <h1>State Match Trials</h1>
+                     <h1>State Match</h1>
                      <div class="dots text-center">
                          <div class="dot1"> </div>
                          <div class="dot1"></div>
@@ -418,7 +418,7 @@
             <!-- 17th October Match Trials -->
             <div class="row">
                 <div class="col-md-12 mt-5 text-black text-center py-4">
-                     <h1>State Match Trials</h1>
+                     <h1>State Match</h1>
                      <div class="dots text-center">
                          <div class="dot1"> </div>
                          <div class="dot1"></div>
@@ -869,9 +869,6 @@
                         </div>
                         <div class="col">
                             <div class="city-box">Kota</div>
-                        </div>
-                        <div class="col">
-                            <div class="city-box">Amritsar</div>
                         </div>
                     </div>
 
