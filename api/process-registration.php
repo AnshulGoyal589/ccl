@@ -140,22 +140,10 @@ try {
     $amount_in_paise = $amount_in_inr * 100;
     error_log("[{$regId}] Amount calculated. INR: {$amount_in_inr}, Paise: {$amount_in_paise}.");
 
-    // 1. Get the custom amount from the form
-$userAmount = $_POST['amount']; // The value from the <input name="amount">
-
-// 2. Simple validation
-if (empty($userAmount) || !is_numeric($userAmount) || $userAmount <= 0) {
-    echo json_encode(['error' => 'Invalid amount entered.']);
-    exit;
-}
-
-// 3. Convert to Paise for Razorpay
-$amountInPaise = $userAmount * 100;
-
     $api = new Api(KEY_ID, KEY_SECRET);
     $orderData = [
         'receipt'         => $regId,
-        'amount'          => $amountInPaise,
+        'amount'          => $amount_in_paise,
         'currency'        => 'INR',
         'payment_capture' => 1
     ];
@@ -168,7 +156,7 @@ $amountInPaise = $userAmount * 100;
         "status"       => "success",
         "razorpay_key" => KEY_ID,
         "order_id"     => $razorpayOrder['id'],
-        "amount"       => $amountInPaise,
+        "amount"       => $amount_in_paise,
         "currency"     => "INR",
         "name"         => "Champion Cricket League",
         "description"  => "Trial Registration Fees",
