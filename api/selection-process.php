@@ -58,7 +58,14 @@
                 <div class="selection-processes h-100">
                     <h2 class="py-2 text-center">Step 1: Registration</h2>
                     <ul>
-                        <li><b>Registration Fee : </b> <b>INR 999</b> for regular players; INR 1199 for all-rounders.</li>
+                        <li><b>Registration fee</b> 
+</br> <b>Leather</b> - Batsman / Bowler - 1199
+, All Rounder /  Wicket keeper Batsman - 1499 
+
+
+<b>Tennis</b> - Batsman / Bowler- 799 
+
+, All Rounder / Wicket Keeper Batsman - 1199</li>
 
                         <li>States Covered: 
                             Gujarat, 
