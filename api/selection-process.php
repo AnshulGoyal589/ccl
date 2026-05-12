@@ -133,7 +133,7 @@
                     <h2 class="text-center">Step 2: Match Registration</h2>
                     <ul>
                        
-                        <li><b>U16 Match Fees </b>: INR 4999.</li>
+                        <li>U16 INR 5999 and senior INR 6999</li>
                         <li><b>U16 Match Format  : </b>Two 25-25 over matches per
                             participant</li>
                              <li><b>Open League Fees </b>: INR 5999.</li>
