@@ -134,12 +134,14 @@
                     <ul>
                        
                         <li>U16 INR 5999 and senior INR 6999</li>
+                        <li>Tennis Matches Fee - 5999</li>
                         <li><b>U16 Match Format  : </b>Two 25-25 over matches per
                             participant</li>
                               <li><b>Open League Match Format  : </b>Two 20-20 over matches per
                             participant</li>
                         <li><b>Location : </b>Matches held at Delhi NCR or
                             local state grounds</li>
+                        
                         <li><b> Provisions</b> :
                             <ul>
                                 <li>
