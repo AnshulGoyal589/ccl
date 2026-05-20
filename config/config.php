@@ -5,7 +5,7 @@ return [
         'host'      => 'smtp.gmail.com',
         'port'      => 587,
         'username'  => 'khelbharat2026@gmail.com',
-        'password'  => 'iwbj mswi fvwn zeaa',
+        'password'  => 'gzid fmgh nefi kbqr',
     ],
 
     'google_sheets' => [
