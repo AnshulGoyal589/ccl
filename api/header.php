@@ -45,7 +45,7 @@
                         <a href="https://www.linkedin.com/company/champion-cricket-league"><i
                                 class="fa-brands fa-linkedin"></i></a>
 
-                        <a href="https://www.instagram.com/champion_cricket_league/"><i
+                        <a href="https://www.instagram.com/official_khel_bharat?igsh=MTN3Zml0bmtkbjkxdQ%3D%3D"><i
                                 class="fa-brands fa-instagram"></i></a>
                                 
                          <a href="https://www.facebook.com/share/ZcPYAj9NXQmknsGj/?mibextid=LQQJ4d"><i class="fa-brands fa-facebook-f"></i></a>

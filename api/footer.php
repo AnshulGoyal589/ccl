@@ -15,7 +15,7 @@ We shape the future of cricket's great name!
                 </p>
                 <h6>SOCIAL ICONS</h6>
                 <div class="footer-icon-div">
-                    <a href="https://www.instagram.com/champion_cricket_league/"><i
+                    <a href="https://www.instagram.com/official_khel_bharat?igsh=MTN3Zml0bmtkbjkxdQ%3D%3D"><i
                             class="fa-brands fa-instagram"></i></a>
 
                     <a href="https://x.com/CCL_IND"> <i class="fa-brands fa-x-twitter"></i></a>
