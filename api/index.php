@@ -42,9 +42,9 @@
         <div class="item">
             <img src="/assets/images/three.png" width="100%" alt="banner-image-3">
         </div>
-        <div class="item">
+        <!-- <div class="item">
             <img src="/assets/images/four.png" width="100%" alt="banner-image-4">
-        </div>
+        </div> -->
     </div>
 
     <div class="banner-carousel mobile-view owl-carousel">
@@ -57,9 +57,9 @@
         <div class="item">
             <img src="/assets/images/three.png" width="100%" alt="banner-image-3">
         </div>
-        <div class="item">
+        <!-- <div class="item">
             <img src="/assets/images/four.png" width="100%" alt="banner-image-4">
-        </div>
+        </div> -->
     </div>
 </section>
 <!-- about section start -->

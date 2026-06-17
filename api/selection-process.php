@@ -133,8 +133,8 @@
                     <h2 class="text-center">Step 2: Match Registration</h2>
                     <ul>
                        
-                        <li>U16 INR 5999 and senior INR 6999</li>
-                        <li>Tennis Matches Fee - 5999</li>
+                        <li>Junior INR 6999 and senior INR 7999</li>
+                        <li>Tennis Matches Fee - 6999</li>
                         <li><b>U16 Match Format  : </b>Two 25-25 over matches per
                             participant</li>
                               <li><b>Open League Match Format  : </b>Two 20-20 over matches per
@@ -259,25 +259,31 @@
                     </h2>
                     <h4>AWARDS</h4>
                     <ul>
-                        <li><b>U16 Awards : </b>Winning team will get 11 cricket kits (SS/SG).</li>
-                        <li><b>U16 Man of the Series : </b>
-                          Man of the series will BMW Bicycle
-                        <li><b>U16 Sponsor : </b>Company will sponsor the best 25 players for 2 years from U16 team.</li>
-                        <li><b>Open League Winning Team : </b>10 motorcycles (brands:
-                            Hero/Bajaj/Yamaha)</li>
-                        <li><b>Open League Man of the Match : </b>
-                           Bike and complete cricket kit
-                        </li>
-                        <li><b>Open League Man of the 
-                            Series : </b>
-                         BMW/ Triumph
-                        </li>
-                        <li><b>Open League Runner Up Team : </b>
-                            Cash prize or cricket kit.
-                        </li>
-                       
-                         <li><b>Open League Sponsor : </b>Company will sponsor the best 25 players for 2 years from open league team.</li>
-                    </ul>
+    <li>
+        <strong>Junior ( Under - 16 ): ( leather)</strong>
+        <ol>
+            <li>Winning team - All player Kit Bag + Medal + Certificate + Next season sponsorship</li>
+            <li>Runner up team - Ambrose shoes + White dress + Certificate + Medal + Next year sponsorship</li>
+            <li>Man of the series - Sports cycle + Certificate + Medal</li>
+        </ol>
+    </li>
+    <li>
+        <strong>Senior ( Above - 16 ): ( leather)</strong>
+        <ol>
+            <li>Winning team - 11 All player Sports cycle + All player Kit Bag + White dress + Certificate + Medal + Trophy + Next year sponsorship</li>
+            <li>Runner up team - Kit bag + White dress + Certificate + Medal + Next season sponsorship</li>
+            <li>Man of the series - Bike</li>
+        </ol>
+    </li>
+    <li>
+        <strong>Tennis ( Open Category ) </strong>
+        <ol>
+            <li>Winning team - Trophy + Tennis Kit Bag + Next Season sponsorship + Certificate + Medal</li>
+            <li>Runner up team - Ambrose shoes + White dress + Certificate + Medals + Next year sponsorship</li>
+            <li>Man of the series - Sports cycle + Certificate + Medal</li>
+        </ol>
+    </li>
+</ul>
                 </div>
 
             </div>
